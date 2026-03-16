@@ -3,44 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>Matthieu Brossault — Fullstack .NET Engineer</title>
     <meta name="description" content="Portfolio of Matthieu Brossault, Fullstack .NET Engineer. Nantes, France." />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
     <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
   <body>
-    <header>
-      <nav aria-label="Main">
-        <span data-i18n="nav.lang" id="lang-switcher"></span>
+    <header class="container site-header" id="site-header">
+      <nav class="site-nav" aria-label="Main">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <span id="lang-switcher"></span>
       </nav>
     </header>
-    <main>
-      <section id="hero" aria-labelledby="hero-heading">
-        <h1 id="hero-heading" data-i18n="hero.title"></h1>
-        <p data-i18n="hero.subtitle"></p>
+    <main class="container">
+      <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+        <p class="hero-intro" data-i18n="hero.intro"></p>
+        <h1 id="hero-heading" class="hero-title" data-i18n="hero.title"></h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+        <a href="#about" class="hero-scroll" aria-label="Scroll to content">
+          <span data-i18n="hero.scroll"></span>
+          <span class="hero-scroll-icon" aria-hidden="true">↓</span>
+        </a>
       </section>
-      <section id="about" aria-labelledby="about-heading">
+      <section id="about" class="content-section" aria-labelledby="about-heading">
+        <p class="section-label" data-i18n="about.label"></p>
         <h2 id="about-heading" data-i18n="about.heading"></h2>
         <p data-i18n="about.bio"></p>
         <p data-i18n="about.location"></p>
       </section>
-      <section id="skills" aria-labelledby="skills-heading">
+      <section id="skills" class="content-section content-section--alt" aria-labelledby="skills-heading">
+        <p class="section-label" data-i18n="skills.label"></p>
         <h2 id="skills-heading" data-i18n="skills.heading"></h2>
         <ul id="skills-list"></ul>
       </section>
-      <section id="experience" aria-labelledby="experience-heading">
+      <section id="experience" class="content-section" aria-labelledby="experience-heading">
+        <p class="section-label" data-i18n="experience.label"></p>
         <h2 id="experience-heading" data-i18n="experience.heading"></h2>
         <ul id="experience-list"></ul>
       </section>
-      <section id="projects" aria-labelledby="projects-heading">
+      <section id="projects" class="content-section content-section--alt" aria-labelledby="projects-heading">
+        <p class="section-label" data-i18n="projects.label"></p>
         <h2 id="projects-heading" data-i18n="projects.heading"></h2>
         <div id="projects-grid"></div>
       </section>
-      <section id="contact" aria-labelledby="contact-heading">
+      <section id="contact" class="content-section" aria-labelledby="contact-heading">
+        <p class="section-label" data-i18n="contact.label"></p>
         <h2 id="contact-heading" data-i18n="contact.heading"></h2>
         <ul id="contact-links"></ul>
       </section>
     </main>
-    <footer>
+    <footer class="container site-footer">
+      <a href="#" class="back-to-top" data-i18n="nav.backToTop">Back to top</a>
       <ul id="footer-links"></ul>
     </footer>
     <script type="application/ld+json" id="json-ld-person">
