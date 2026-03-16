@@ -4,25 +4,31 @@
     "description": "Portfolio de Matthieu Brossault, ingénieur fullstack .NET. Nantes, France. Développement web, .NET, Angular, React."
   },
   "hero": {
+    "intro": "Je suis",
     "title": "Matthieu Brossault",
-    "subtitle": "Ingénieur Fullstack .NET. Ingénieur et architecte web."
+    "subtitle": "Ingénieur Fullstack .NET. Ingénieur et architecte web.",
+    "scroll": "Défiler"
   },
   "about": {
+    "label": "Qui je suis",
     "heading": "À propos",
     "bio": "Ingénieur Fullstack .NET, expérience en développement web front-end et back-end. Focus sur l'architecture propre et les outils modernes.",
     "location": "Nantes, France"
   },
   "skills": {
+    "label": "Ce que j'utilise",
     "heading": "Compétences & tech",
     "items": [".NET", "C#", "Angular", "React", "TypeScript", "JavaScript", "HTML/CSS", "SQL"]
   },
   "experience": {
+    "label": "Où j'ai travaillé",
     "heading": "Expérience",
     "items": [
       { "role": "Ingénieur Fullstack .NET", "company": "—", "period": "", "summary": "Développement web, projets fullstack." }
     ]
   },
   "projects": {
+    "label": "Ce que j'ai construit",
     "heading": "Projets",
     "items": [
       {
@@ -63,6 +69,7 @@
     ]
   },
   "contact": {
+    "label": "Me contacter",
     "heading": "Contact",
     "links": [
       { "label": "LinkedIn", "url": "https://fr.linkedin.com/in/matthieu-brossault" },
@@ -70,6 +77,12 @@
     ]
   },
   "nav": {
-    "lang": "FR"
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact",
+    "lang": "FR",
+    "backToTop": "Retour en haut"
   }
 }
