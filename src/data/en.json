@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Matthieu Brossault — Fullstack .NET Engineer",
+    "description": "Portfolio of Matthieu Brossault, Fullstack .NET Engineer. Nantes, France. Web development, .NET, Angular, React."
+  },
+  "hero": {
+    "title": "Matthieu Brossault",
+    "subtitle": "Fullstack .NET Engineer. Web engineer & architect."
+  },
+  "about": {
+    "heading": "About",
+    "bio": "Fullstack .NET Engineer with experience in web development, front-end and back-end. Focus on clean architecture and modern tooling.",
+    "location": "Nantes, France"
+  },
+  "skills": {
+    "heading": "Skills & tech",
+    "items": [".NET", "C#", "Angular", "React", "TypeScript", "JavaScript", "HTML/CSS", "SQL"]
+  },
+  "experience": {
+    "heading": "Experience",
+    "items": [
+      { "role": "Fullstack .NET Engineer", "company": "—", "period": "", "summary": "Web development, fullstack projects." }
+    ]
+  },
+  "projects": {
+    "heading": "Projects",
+    "items": [
+      {
+        "id": "angular-task-tracker",
+        "title": "Angular Task Tracker",
+        "description": "Task management app built with Angular.",
+        "stack": ["Angular", "TypeScript"],
+        "repoUrl": "https://github.com/MatthieuBrossault/AngularTaskTracker"
+      },
+      {
+        "id": "angular-tic-tac-toe",
+        "title": "Angular Tic-Tac-Toe",
+        "description": "Tic-tac-toe game in Angular.",
+        "stack": ["Angular", "TypeScript"],
+        "repoUrl": "https://github.com/MatthieuBrossault/AngularTicTacToe"
+      },
+      {
+        "id": "hands-on-react-labs",
+        "title": "Hands-On React Labs",
+        "description": "HandOnReact Lab — React + TypeScript tutorial.",
+        "stack": ["React", "TypeScript"],
+        "repoUrl": "https://github.com/MatthieuBrossault/HandsOnReactLabsTuto"
+      },
+      {
+        "id": "netcore-angular-exemple",
+        "title": ".NET Core + Angular example",
+        "description": "Fullstack sample: .NET Core backend with Angular frontend.",
+        "stack": [".NET Core", "Angular", "TypeScript"],
+        "repoUrl": "https://github.com/MatthieuBrossault/NetCoreAngularExemple"
+      },
+      {
+        "id": "traversy-react-18",
+        "title": "React 18 crash course",
+        "description": "Traversy Media React 18 JavaScript crash course.",
+        "stack": ["React", "JavaScript"],
+        "repoUrl": "https://github.com/MatthieuBrossault/TraversyReact18CrashCourse"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contact",
+    "links": [
+      { "label": "LinkedIn", "url": "https://fr.linkedin.com/in/matthieu-brossault" },
+      { "label": "GitHub", "url": "https://github.com/MatthieuBrossault" }
+    ]
+  },
+  "nav": {
+    "lang": "EN"
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matthieu Brossault — Fullstack .NET Engineer</title>
+    <meta name="description" content="Portfolio of Matthieu Brossault, Fullstack .NET Engineer. Nantes, France." />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main">
+        <span data-i18n="nav.lang" id="lang-switcher"></span>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading" data-i18n="hero.title"></h1>
+        <p data-i18n="hero.subtitle"></p>
+      </section>
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading" data-i18n="about.heading"></h2>
+        <p data-i18n="about.bio"></p>
+        <p data-i18n="about.location"></p>
+      </section>
+      <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading" data-i18n="skills.heading"></h2>
+        <ul id="skills-list"></ul>
+      </section>
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading" data-i18n="experience.heading"></h2>
+        <ul id="experience-list"></ul>
+      </section>
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" data-i18n="projects.heading"></h2>
+        <div id="projects-grid"></div>
+      </section>
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" data-i18n="contact.heading"></h2>
+        <ul id="contact-links"></ul>
+      </section>
+    </main>
+    <footer>
+      <ul id="footer-links"></ul>
+    </footer>
+    <script type="application/ld+json" id="json-ld-person">
+      {"@context":"https://schema.org","@type":"Person","name":"Matthieu Brossault","jobTitle":"Fullstack .NET Engineer","address":{"@type":"PostalAddress","addressLocality":"Nantes","addressCountry":"FR"},"sameAs":["https://fr.linkedin.com/in/matthieu-brossault","https://github.com/MatthieuBrossault"]}
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
