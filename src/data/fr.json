@@ -9,11 +9,50 @@
     "subtitle": "Ingénieur Fullstack .NET. Ingénieur et architecte web.",
     "scroll": "Défiler"
   },
+  "sidebar": {
+    "showContacts": "Afficher les contacts",
+    "emailTitle": "E-mail",
+    "locationTitle": "Localisation"
+  },
   "about": {
     "label": "Qui je suis",
     "heading": "À propos",
     "bio": "Ingénieur Fullstack .NET, expérience en développement web front-end et back-end. Focus sur l'architecture propre et les outils modernes.",
     "location": "Nantes, France"
+  },
+  "services": {
+    "title": "Ce que je fais",
+    "items": [
+      {
+        "icon": "dev",
+        "title": "Développement web",
+        "text": "Applications web modernes avec .NET, Angular et React."
+      },
+      {
+        "icon": "design",
+        "title": "Architecture & conception",
+        "text": "Architecture propre, APIs et front-end maintenable."
+      },
+      {
+        "icon": "app",
+        "title": "Livraison fullstack",
+        "text": "Fonctionnalités de bout en bout, de la base de données à l’UI."
+      },
+      {
+        "icon": "photo",
+        "title": "Qualité & outillage",
+        "text": "TypeScript, culture tests et amélioration continue."
+      }
+    ]
+  },
+  "resume": {
+    "articleTitle": "CV",
+    "educationTitle": "Formation",
+    "experienceTitle": "Expérience",
+    "skillsTitle": "Compétences"
+  },
+  "education": {
+    "items": []
   },
   "skills": {
     "label": "Ce que j'utilise",
@@ -24,12 +63,17 @@
     "label": "Où j'ai travaillé",
     "heading": "Expérience",
     "items": [
-      { "role": "Ingénieur Fullstack .NET", "company": "—", "period": "", "summary": "Développement web, projets fullstack." }
+      {
+        "role": "Ingénieur Fullstack .NET",
+        "company": "—",
+        "period": "",
+        "summary": "Développement web, projets fullstack."
+      }
     ]
   },
   "projects": {
     "label": "Ce que j'ai construit",
-    "heading": "Projets",
+    "heading": "Portfolio",
     "items": [
       {
         "id": "angular-task-tracker",
@@ -71,6 +115,8 @@
   "contact": {
     "label": "Me contacter",
     "heading": "Contact",
+    "intro": "Contactez-moi sur LinkedIn ou GitHub — avec plaisir pour échanger.",
+    "email": "matthieu.brossault@gmail.com",
     "links": [
       { "label": "LinkedIn", "url": "https://fr.linkedin.com/in/matthieu-brossault" },
       { "label": "GitHub", "url": "https://github.com/MatthieuBrossault" }
@@ -78,9 +124,8 @@
   },
   "nav": {
     "about": "À propos",
-    "skills": "Compétences",
-    "experience": "Expérience",
-    "projects": "Projets",
+    "resume": "CV",
+    "portfolio": "Portfolio",
     "contact": "Contact",
     "lang": "FR",
     "backToTop": "Retour en haut"

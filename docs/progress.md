@@ -24,6 +24,7 @@ Minimal tracking: Backlog → In progress → Done.
 | Projects block (data + UI) | Cards from en.json/fr.json, 5 GitHub projects |
 | Contact + footer links | LinkedIn, GitHub |
 | SEO + JSON-LD | Person schema in index.html |
+| vCard UI integration | Sidebar + tabbed main (About / Resume / Portfolio / Contact), Poppins + Ion Icons, `src/styles/vcard.css` + `public/vcard/` assets |
 
 ---
 

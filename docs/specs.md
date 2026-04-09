@@ -28,10 +28,10 @@ Ref: [01-overview](01-overview.md#constraints)
 
 | Area | Spec |
 |------|------|
-| **Site structure** | Hero, About, Skills, Experience, Projects, Contact. Optional: language switcher. |
+| **Site structure** | vCard-style layout: sidebar (identity + contacts + socials) + main tabs: About, Resume (experience + skills), Portfolio, Contact. Language switcher in navbar. |
 | **Projects** | List/cards with context, stack, highlights, links. Start: single page (Option A); optional detail pages later. |
 | **Languages** | EN + FR; default from `Accept-Language` or location; optional switcher + localStorage. |
-| **Style** | Minimal, readable, performant; semantic HTML; optional JSON-LD for discoverability. |
+| **Style** | vCard template CSS (MIT, codewithsadee) + small overrides; Poppins + Ion Icons; optional JSON-LD. |
 | **Discoverability** | SEO basics; structure and keywords for algorithm/ATS parsing; optional structured data. |
 
 Ref: [02-website-architecture](02-website-architecture.md), [03-style-and-discoverability](03-style-and-discoverability.md)
