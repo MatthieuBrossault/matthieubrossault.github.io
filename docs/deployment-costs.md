@@ -4,11 +4,25 @@ Where the site runs and what it costs (monthly / yearly). Update when something 
 
 ---
 
+## Chosen setup (this project)
+
+| Decision | Choice |
+|----------|--------|
+| **Host** | [GitHub Pages](https://pages.github.com/) |
+| **URL type** | **User site** — `https://<username>.github.io/` (repo named `<username>.github.io`) |
+| **Build & publish** | **GitHub Actions** — workflow [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml) runs `npm ci`, `npm run build`, uploads **`dist/`** |
+| **Branch** | **`master`** (pushes trigger deploy) |
+| **Vite `base`** | **`'/'`** — matches site root; `/vcard/` assets work as-is |
+
+Step-by-step instructions and alternatives (e.g. project URL, asset caveats): [github-pages-deployment.md](github-pages-deployment.md).
+
+---
+
 ## Hosting
 
 | Service | Role | Setup notes | Monthly | Yearly |
 |---------|------|-------------|---------|--------|
-| GitHub Pages | Static site | Deploy from repo: Settings → Pages → Source = branch (e.g. `main`), folder = `/ (root)` or `dist`. For project site (`user.github.io/repo-name`), set `base: '/repo-name/'` in `vite.config.js` before build. | €0 | €0 |
+| GitHub Pages | Static site | **This repo:** Actions → `dist/`. Not “Deploy from a branch” with `/docs`. If you ever use a **project** URL (`user.github.io/repo-name/`), set `base: '/repo-name/'` in `vite.config.js` before build. | €0 | €0 |
 
 ---
 
@@ -34,4 +48,4 @@ Where the site runs and what it costs (monthly / yearly). Update when something 
 |---|--------|--------|
 | **Total** | €0 | €0 |
 
-*Fill when services are chosen. Target: €0 if using only free tiers and no custom domain.*
+**Hosting:** GitHub Pages (€0). **Domain:** optional paid registrar if you add a custom domain later.

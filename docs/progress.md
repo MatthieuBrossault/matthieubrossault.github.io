@@ -25,6 +25,7 @@ Minimal tracking: Backlog → In progress → Done.
 | Contact + footer links | LinkedIn, GitHub |
 | SEO + JSON-LD | Person schema in index.html |
 | vCard UI integration | Sidebar + tabbed main (About / Resume / Portfolio / Contact), Poppins + Ion Icons, `src/styles/vcard.css` + `public/vcard/` assets |
+| Deploy to GitHub Pages | User site + **`base: '/'`**; **GitHub Actions** [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml) on **`master`**; see [deployment-costs.md](deployment-costs.md) |
 
 ---
 
@@ -32,7 +33,6 @@ Minimal tracking: Backlog → In progress → Done.
 
 | Item | Note |
 |------|------|
-| Deploy to GitHub Pages | Set base in vite.config.js if project site |
 | Domain (optional) | |
 
 ---

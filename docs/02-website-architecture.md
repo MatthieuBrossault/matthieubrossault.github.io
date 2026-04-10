@@ -71,8 +71,8 @@ Footer on every page: LinkedIn, GitHub, contact. No contact form unless you add 
 
 - **Content** — static only: markdown or JSON in the repo for projects and copy. No CMS (no cost, no backend, you edit files).
 - **Stack** — one simple stack: static HTML/CSS/JS, or a lightweight SSG (e.g. 11ty, Astro, Vite + static export). Avoid backend, DB, auth.
-- **Hosting** — free static hosting: **GitHub Pages** (free, deploys from repo), or Netlify/Vercel free tier. Custom domain optional (low cost).
-- **Deploy** — push to main (or trigger on push). No CI complexity unless you want it; many hosts build from repo automatically.
+- **Hosting** — **GitHub Pages** (free): **user site** at `https://<username>.github.io/` from repo `<username>.github.io`. Custom domain optional (low cost).
+- **Deploy** — **GitHub Actions** on push to **`master`**: `npm run build`, publish **`dist/`** (see [deployment-costs.md](deployment-costs.md), [github-pages-deployment.md](github-pages-deployment.md)).
 
 The site itself can double as a first “project” (stack, performance, accessibility) to show craft — without adding moving parts.
 
