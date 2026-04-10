@@ -12,5 +12,6 @@ Index of documentation for the personal portfolio project.
 | [Specs](specs.md) | Solution specs (requirements, scope, constraints) |
 | [Progress](progress.md) | Development progress (backlog / in progress / done) |
 | [Deployment & costs](deployment-costs.md) | Deployment setup and monthly/yearly costs |
+| [GitHub Pages deployment](github-pages-deployment.md) | Step-by-step: Vite `base`, Actions workflow, assets |
 | *TBD* | Setup & development |
 | *TBD* | Contributing |
