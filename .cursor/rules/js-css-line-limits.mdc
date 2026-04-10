@@ -1,0 +1,22 @@
+---
+description: Cap project-authored JS/CSS at 300 lines; split when needed; aim for ~200–300 lines per substantial module.
+globs: "**/*.{js,css}"
+alwaysApply: false
+---
+
+# JS and CSS file size (project-authored code)
+
+## Rule
+
+- Each **project-authored** `.js` and `.css` file **must not exceed 300 lines**. Split before crossing that limit.
+- For non-trivial modules, **aim for roughly 200–300 lines** so each file stays focused. **Shorter files are fine** for entry points (e.g. `main.js`), tiny utilities, or thin style layers when merging would be artificial.
+- Prefer **clear names** and **one responsibility per file** over arbitrary splits.
+
+## Exceptions
+
+- **Third-party or generated snapshots** copied verbatim (e.g. a full theme stylesheet such as `src/styles/vcard.css` from an external template) may exceed the limit until intentionally refactored. When refactoring vendor CSS, split into logical partials and compose with `@import` (order matters for cascade).
+
+## When editing
+
+- Before adding a large block, check the file line count; extract helpers or partials first.
+- After splitting, run the app (`npm run dev`) and a production build (`npm run build`) to verify bundles and styles.
