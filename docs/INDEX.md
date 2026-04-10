@@ -11,7 +11,7 @@ Index of documentation for the personal portfolio project.
 | [References & inspiration](05-references.md) | Hostinger portfolio guide, tips, 24 sample portfolios |
 | [Specs](specs.md) | Solution specs (requirements, scope, constraints) |
 | [Progress](progress.md) | Development progress (backlog / in progress / done) |
-| [Deployment & costs](deployment-costs.md) | Deployment setup and monthly/yearly costs |
-| [GitHub Pages deployment](github-pages-deployment.md) | Step-by-step: Vite `base`, Actions workflow, assets |
+| [Deployment & costs](deployment-costs.md) | Chosen setup: GitHub Pages **user site**, Actions on **`master`**, costs |
+| [GitHub Pages deployment](github-pages-deployment.md) | Full guide: Vite `base`, workflow, assets (matches chosen setup) |
 | *TBD* | Setup & development |
 | *TBD* | Contributing |

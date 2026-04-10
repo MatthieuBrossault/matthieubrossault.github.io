@@ -2,6 +2,8 @@
 
 This project is a **Vite** static site: the production output lives in **`dist/`** after `npm run build`. GitHub Pages serves that folder as a static website. This guide walks through configuration, **`base` URL** (critical for Vite), **automation with GitHub Actions**, and how to fix **asset paths** if you publish under a repository URL.
 
+**Recorded choices for this repo:** **user site** at `https://<username>.github.io/`, **`base: '/'`**, deploy via **GitHub Actions** on pushes to **`master`**. Summary table: [deployment-costs.md](deployment-costs.md#chosen-setup-this-project).
+
 ---
 
 ## 1. What you need
@@ -131,7 +133,7 @@ jobs:
 
 ### 4.3 First run
 
-1. Commit and push **`.github/workflows/deploy.yml`** to **`main`**.
+1. Commit and push **`.github/workflows/deploy.yml`** to **`master`** (this repo’s deployment branch).
 2. Open **Actions** and confirm the workflow succeeds.
 3. **Settings → Pages** should show the published URL (propagation can take a minute or two).
 
@@ -177,7 +179,7 @@ Confirm scripts, CSS, and `/vcard` assets load.
 | 2 | Set **`base`** in **`vite.config.js`** to **`'/'`** or **`'/repo-name/'`**. |
 | 3 | If **`base`** is a subpath, fix **`/vcard/`** references (see §3). |
 | 4 | Add **`.github/workflows/deploy.yml`**, enable **Pages → GitHub Actions**. |
-| 5 | Push to **`main`**, check **Actions**, then open the **Pages** URL. |
+| 5 | Push to **`master`** (or your chosen default branch), check **Actions**, then open the **Pages** URL. |
 
 ---
 

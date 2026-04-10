@@ -58,4 +58,4 @@ Ref: [02-website-architecture](02-website-architecture.md), [03-style-and-discov
 - [ ] Core sections present (hero, about, skills, experience, projects, contact).
 - [ ] At least profile + GitHub projects reflected; LinkedIn filled where applicable.
 - [ ] Fast load; semantic structure; optional JSON-LD.
-- [ ] Deployment and costs documented in [deployment-costs](deployment-costs.md); progress in [progress](progress.md).
+- [x] Deployment and costs documented in [deployment-costs](deployment-costs.md) (chosen: GitHub Pages user site, Actions on `master`); progress in [progress](progress.md).
