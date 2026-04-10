@@ -1,0 +1,180 @@
+{
+  "resume": {
+    "skillCategoriesTitle": "Skill map (detail)"
+  },
+  "education": {
+    "items": [
+      {
+        "title": "ENI Nantes — Concepteur Développeur Informatique (BAC+4)",
+        "period": "2016",
+        "summary": "Titre professionnel « Concepteur Développeur Informatique »."
+      }
+    ]
+  },
+  "experience": {
+    "items": [
+      {
+        "role": "Senior C# .NET Developer",
+        "company": "Rayonnance",
+        "location": "Nantes",
+        "period": "Jan 2025 – Aug 2025",
+        "summary": "Portage of a Windows Mobile app to .NET MAUI (.NET 9): legacy analysis, functional scope recovery, technical stack updates, and ramp-up on mobile specifics. In parallel, TMA on existing mobile/web apps (bugs and evolutions).",
+        "highlights": [
+          "Agile team (5): 3 fullstack devs, 1 team lead; 2-week sprints",
+          "Stack: .NET Framework 3.5–4.8, .NET 8–9, Git, SQL Server (SQLite/Oracle minor), Razor, REST APIs, SonarCloud",
+          "Technical design, domain objects, DB (database-first), back + front (XAML), cross-platform targets (Android, iOS, Mac, Windows)"
+        ],
+        "stack": "C#, .NET MAUI, .NET 8–9, REST, Swagger, Visual Studio, VS Code, Git, HTML/CSS/TS, JIRA/Confluence, Azure DevOps, SQL Server, SQLite"
+      },
+      {
+        "role": ".NET Team Lead",
+        "company": "Aviv Group",
+        "location": "Paris (remote)",
+        "period": "Jan 2023 – Sep 2024",
+        "summary": "Whitelabel program: cloud architecture for B2B/B2C sites across group brands — long-term goal to unify international SI. Serverless on AWS, SQL Server in the cloud.",
+        "highlights": [
+          "Team ~8–10: back/front devs, architects, leads, Scrum Master; 2-week sprints",
+          "Encadrement on cloud sizing/security and board follow-up; trunk-based branching",
+          ".NET 6, AWS CDK, Git, Vue/TS front, REST, SonarCloud, CircleCI"
+        ],
+        "stack": "C#, .NET 6, AWS, REST, Swagger, Vue, TypeScript, Git, JIRA, SQL Server (cloud)"
+      },
+      {
+        "role": "Backend .NET Tech Lead",
+        "company": "Onepoint (Bolloré)",
+        "location": "Nantes",
+        "period": "Feb 2022 – Oct 2022",
+        "summary": "OPTIMV2: Azure serverless, event-driven (Kafka), MongoDB + SQL Server reporting for international freight cost optimization and in-transit control workflows.",
+        "highlights": [
+          "Team of 8; Agile 2–3 week sprints; Azure Repos & Boards; Gitflow",
+          ".NET 6, Azure Functions + Kafka, MongoDB, SQL Server, Vue/SASS/TS, REST + SOAP"
+        ],
+        "stack": "C#, .NET 6, Kafka, Azure, MongoDB, SQL Server, Vue, TypeScript, REST/SOAP"
+      },
+      {
+        "role": ".NET Software Engineer",
+        "company": "Showroomprivé (Groupe Créative)",
+        "location": "Sables-d’Olonne",
+        "period": "Jul 2020 – Nov 2021",
+        "summary": "Marketplace project: continuous sale alongside event sales via Mirakl integration; financial flows (payment, accounting) and internal data alignment.",
+        "highlights": [
+          "Payment squad (5); Agile; Mirakl APIs, SQL Server/T-SQL, scheduled jobs, SOAP to Oracle ERP",
+          ".NET Framework/Core, Angular, Git/SourceTree, JIRA/Confluence"
+        ],
+        "stack": "C#, .NET Framework/Core, MVC, REST/SOAP, Angular, SQL Server, T-SQL"
+      },
+      {
+        "role": ".NET Software Engineer",
+        "company": "Siemens (Atos — Créative)",
+        "location": "Nantes",
+        "period": "Feb 2019 – Jun 2020",
+        "summary": "PM@Portal: end-to-end rebuild of a project & installation platform for medical equipment. OneLink: intranet ordering and delivery/install/payment flows with automated quoting.",
+        "highlights": [
+          "Solo dev on PM@Portal from analysis to delivery; Clean Architecture, TDD, xUnit ~90% coverage, TeamCity CI/CD",
+          ".NET Core 2.1, EF Core, Razor, Azure DevOps, SQL Server"
+        ],
+        "stack": ".NET Core 2.1, EF Core, Razor, xUnit, TeamCity, Azure DevOps, SQL Server, Bootstrap, Kendo"
+      },
+      {
+        "role": ".NET Designer/Developer",
+        "company": "ISILOG",
+        "location": "Nantes",
+        "period": "Jan 2017 – Dec 2018",
+        "summary": "IWS Infinity: ITSM/ITAM/GMAO suite — heavy customization (UI, forms, mobile). Progressive refactor toward responsive web and mobile (iOS/Android).",
+        "highlights": [
+          "V-cycle in core team; levels 1–3 support & major/minor releases",
+          "ASP.NET WebForms (VB), .NET 3.5–4+, SQL Server/Oracle, JS/jQuery/Bootstrap"
+        ],
+        "stack": "ASP.NET, VB, WebForms, jQuery, Bootstrap, SQL Server, Oracle, Telerik"
+      },
+      {
+        "role": "Java/JEE Designer/Developer",
+        "company": "Accenture",
+        "location": "Nantes",
+        "period": "Jul 2016 – Oct 2016",
+        "summary": "Internal dashboards on Raspberry Pi; PHP/HTML5/JS admin; data collection to MySQL (Java). SOAP web services maintenance for telecom APIs.",
+        "highlights": [
+          "Extreme programming with manager checkpoints; maintenance squad (8)",
+          "J2EE, Oracle, SoapUI; PHP, Bootstrap"
+        ],
+        "stack": "Java 7, Eclipse, Oracle, SOAP, PHP, JavaScript, HTML5/CSS"
+      },
+      {
+        "role": ".NET Analyst/Developer",
+        "company": "Intellia",
+        "location": "Nantes",
+        "period": "Jun 2014 – Jun 2016",
+        "summary": "GiPSi: intranet/extranet for project calls — submission, validation, signatures. High-volume SQL optimization, responsive site refactor, user support.",
+        "highlights": [
+          "Small company (5); extreme programming",
+          "ASP.NET WebForms, SVN, SQL Server, jQuery/Bootstrap, Telerik"
+        ],
+        "stack": "ASP.NET, VB, WebForms, SVN, SQL Server, jQuery, Bootstrap"
+      }
+    ]
+  },
+  "skills": {
+    "items": [
+      "C# / .NET",
+      "Angular",
+      "TypeScript / JavaScript",
+      "SQL Server",
+      "REST / SOAP",
+      "Azure / AWS",
+      "Git",
+      "HTML5 / CSS / SASS",
+      "Entity Framework / Dapper",
+      "Agile / Scrum"
+    ]
+  },
+  "skillCategories": [
+    {
+      "title": "Soft skills",
+      "items": ["Autonomy", "Rigor", "Flexibility", "Listening", "Interpersonal skills"]
+    },
+    {
+      "title": "Professional practice",
+      "items": [
+        "Functional/technical needs analysis, sizing and estimation",
+        "Technical architecture and patterns",
+        "Front & back development, DB schemas and data migrations",
+        "Documentation, pair programming / code review",
+        "Build/release CI, corrective and evolutive maintenance"
+      ]
+    },
+    {
+      "title": "Sectors",
+      "items": [
+        "Client tooling & TMA",
+        "E-commerce & marketplaces",
+        "Telecom (SOAP services)",
+        "Medical industry, public sector, ERP/CRM editors",
+        "Real estate (international B2B/B2C), retail & logistics"
+      ]
+    },
+    {
+      "title": "Languages — Front",
+      "items": ["JavaScript", "HTML5", "SASS", "CSS3", "Angular"]
+    },
+    {
+      "title": "Languages — Back",
+      "items": ["C#", "VB", "Java"]
+    },
+    {
+      "title": "Frameworks & runtimes",
+      "items": [".NET 9", ".NET Framework", ".NET Core", "Blazor", "ASPX", "WebForms", "Razor Pages"]
+    },
+    {
+      "title": "Data & messaging",
+      "items": ["SQL Server", "MySQL", "Oracle", "T-SQL", "PL/SQL", "EF Core", "Dapper", "MongoDB", "SQLite", "Kafka"]
+    },
+    {
+      "title": "Cloud & DevOps",
+      "items": ["Azure", "AWS", "Git", "Azure DevOps", "Docker", "TeamCity", "SonarQube / SonarCloud"]
+    },
+    {
+      "title": "Methods & architecture",
+      "items": ["Agile/Scrum", "TDD", "GitFlow", "Clean Architecture", "MVC/MVVM", "Microservices", "Event-driven", "REST (JSON)", "SOAP (XML)"]
+    }
+  ]
+}
