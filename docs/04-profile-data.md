@@ -11,7 +11,7 @@ Extracted from public profiles. Use for copy, meta, structured data, and project
 | Field | Value |
 |-------|--------|
 | Name | Matthieu Brossault |
-| Bio | 30 years old. Fullstack .NET Engineer. |
+| Bio | 34 years old. Fullstack .NET Engineer. |
 | Location | Nantes, France |
 | Joined | 2019-03-07 |
 | Public repos | 5 |
