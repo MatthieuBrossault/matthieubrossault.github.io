@@ -21,7 +21,7 @@ développeur expérimenté → **lead backend** → **team lead / responsable te
 Site **portfolio professionnel** (CV vivant) : mettre en avant compétences, expérience et projets pour la recherche d’emploi.
 
 - **Stack :** Vite, JavaScript vanilla, CSS (thème vCard + surcouche `main.css`), contenu i18n **EN / FR**.
-- **Hébergement :** [GitHub Pages](https://matthieubrossault.github.io) — déploiement **GitHub Actions** sur **`master`** — voir [docs/deployment-costs.md](docs/deployment-costs.md).
+- **Hébergement :** [GitHub Pages](https://matthieubrossault.github.io) — déploiement **GitHub Actions** sur **`master`** — voir [docs/deployment/hosting-and-costs.md](docs/deployment/hosting-and-costs.md).
 - **Contraintes :** un seul développeur, effort et coût minimaux ; site statique, pas de backend.
 
 Index documentation : [docs/INDEX.md](docs/INDEX.md).
@@ -63,13 +63,16 @@ Fichiers de référence (non servis par le site) : CV PDF et dossier compétence
 2. **Ton :** professionnel, factuel, orienté recruteurs FR ; bilingue EN pour lecteurs internationaux.
 3. **Périmètre :** changements minimaux ; pas de sur-ingénierie ; respecter les conventions du repo.
 4. **SEO / découvrabilité :** meta dans JSON, JSON-LD dans `index.html` — garder alignés avec `src/data`.
-5. **Docs :** mettre à jour [docs/deployment-costs.md](docs/deployment-costs.md) si le déploiement ou l’URL change.
+5. **Docs :** mettre à jour [docs/deployment/hosting-and-costs.md](docs/deployment/hosting-and-costs.md) si le déploiement change ; recommandations carrière dans [docs/career/](docs/career/INDEX.md).
 
 ---
 
-## Pistes (suggestions pour le titulaire)
+## Recommandations (docs)
 
-- Aligner le **titre / sous-titre** (`hero`, `meta`) sur la cible **architecte solution** tout en reflétant le parcours lead/team lead dans `profile-detail.*.json`.
-- Ajouter 1–2 **études de cas** projets (contexte métier + décisions d’archi) dans les fiches projets JSON — utile pour des postes architecte.
-- Section ou article court **« veille / formation »** (optionnel) si l’objectif « rester à jour » doit être visible côté recruteur.
-- Vérifier que le site reste **lisible ATS** (structure sémantique, mots-clés cohérents avec le CV dans `src/data`).
+| Sujet | Fichier |
+|-------|---------|
+| Veille marché & tech | [career/market-watch.md](docs/career/market-watch.md) |
+| Formation & études | [career/training.md](docs/career/training.md) |
+| Projets portfolio | [career/portfolio-projects.md](docs/career/portfolio-projects.md) |
+| Contenu du site | [career/site-content.md](docs/career/site-content.md) |
+| SEO, ATS & marché | [career/market-seo.md](docs/career/market-seo.md) |

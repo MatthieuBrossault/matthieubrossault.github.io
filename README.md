@@ -24,4 +24,4 @@ npm run preview  # preview production build
 
 ## Deployment
 
-GitHub Pages (user site), automated on push to **`master`**. See [docs/deployment-costs.md](docs/deployment-costs.md).
+GitHub Pages (user site), automated on push to **`master`**. See [docs/deployment/hosting-and-costs.md](docs/deployment/hosting-and-costs.md).
