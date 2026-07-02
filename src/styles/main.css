@@ -1,5 +1,52 @@
 /* vCard theme overrides — minimal (see vcard.css) */
 
+/* Mobile: sidebar & bottom navbar text aligned with article body (fs-6) */
+@media (max-width: 579px) {
+  .sidebar,
+  article {
+    padding: 18px;
+  }
+
+  .sidebar {
+    max-height: 124px;
+  }
+
+  .sidebar.active {
+    max-height: 440px;
+  }
+
+  .info-content .title {
+    font-size: var(--fs-6);
+    padding: 4px 12px;
+  }
+
+  .info_more-btn {
+    font-size: var(--fs-6);
+  }
+
+  .sidebar .contact-title {
+    font-size: var(--fs-7);
+  }
+
+  .sidebar .contact-info :is(.contact-link, address) {
+    font-size: var(--fs-6);
+  }
+
+  .navbar-list {
+    padding: 0 12px;
+  }
+
+  .navbar-link {
+    font-size: var(--fs-7);
+    padding: 18px 8px;
+  }
+
+  #lang-btn {
+    font-size: var(--fs-7);
+    padding: 0.4rem 0.8rem;
+  }
+}
+
 /* Sidebar subtitle: allow wrapping on desktop (vCard uses width: max-content) */
 .sidebar-info .info-content {
   min-width: 0;
