@@ -72,6 +72,7 @@ Fichiers de référence (non servis par le site) : CV PDF et dossier compétence
 | Sujet | Fichier |
 |-------|---------|
 | Veille marché & tech | [career/market-watch.md](docs/career/market-watch.md) |
+| Diplômes & certifications (FR) | [career/market-credentials.md](docs/career/market-credentials.md) |
 | Formation & études | [career/training.md](docs/career/training.md) |
 | Projets portfolio | [career/portfolio-projects.md](docs/career/portfolio-projects.md) |
 | Contenu du site | [career/site-content.md](docs/career/site-content.md) |
