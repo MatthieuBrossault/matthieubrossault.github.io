@@ -14,6 +14,19 @@
   "experience": {
     "items": [
       {
+        "role": "Tech Lead",
+        "company": "ELA Software",
+        "location": "Nantes, FR",
+        "period": "Oct 2025 – present",
+        "summary": "Technical leadership of ELA Build, a multi-tenant SaaS for construction project managers: project management, specifications (CCTP/DQE), bid analysis, site tracking, and document generation (Word/Excel). .NET 8 microservices and React monorepo, hosted on Kubernetes (OVH, France).",
+        "highlights": [
+          "Product team (~7): technical guidance, design reviews, scoping new modules AlphaPlan (quantity surveying) and AlphaFinancial (project financials)",
+          "Backend: CQRS/MediatR, gRPC, PostgreSQL database-per-tenant, Redis, MassTransit, SignalR; YARP API gateway, OIDC auth (OpenIddict)",
+          "Front: React 18, Vite, TypeScript, TanStack, Ant Design; Multidoc/CCTP Word/Schneider catalogue imports; indexed search and AI roadmap (FTS, pgvector)"
+        ],
+        "stack": "C#, .NET 8, React, TypeScript, PostgreSQL, Redis, gRPC, Kubernetes, Docker, GitLab CI, SignalR, OpenIddict, MassTransit, MongoDB/MinIO"
+      },
+      {
         "role": "Senior C# .NET Developer",
         "company": "Rayonnance",
         "location": "Nantes",
@@ -116,14 +129,13 @@
   "skills": {
     "items": [
       "C# / .NET",
-      "Angular",
-      "TypeScript / JavaScript",
-      "SQL Server",
-      "REST / SOAP",
+      "React / TypeScript",
+      "PostgreSQL",
+      "Microservices / gRPC",
+      "REST / CQRS",
+      "Kubernetes / Docker",
       "Azure / AWS",
       "Git",
-      "HTML5 / CSS / SASS",
-      "Entity Framework / Dapper",
       "Agile / Scrum"
     ]
   },
@@ -145,6 +157,7 @@
     {
       "title": "Sectors",
       "items": [
+        "Construction / project management (document SaaS)",
         "Client tooling & TMA",
         "E-commerce & marketplaces",
         "Telecom (SOAP services)",
@@ -154,7 +167,7 @@
     },
     {
       "title": "Languages — Front",
-      "items": ["JavaScript", "HTML5", "SASS", "CSS3", "Angular"]
+      "items": ["TypeScript", "JavaScript", "React", "HTML5", "CSS3", "SASS", "Angular"]
     },
     {
       "title": "Languages — Back",
@@ -162,19 +175,19 @@
     },
     {
       "title": "Frameworks & runtimes",
-      "items": [".NET 9", ".NET Framework", ".NET Core", "Blazor", "ASPX", "WebForms", "Razor Pages"]
+      "items": [".NET 8", ".NET 9", ".NET Framework", ".NET Core", "Blazor", "ASPX", "WebForms", "Razor Pages"]
     },
     {
       "title": "Data & messaging",
-      "items": ["SQL Server", "MySQL", "Oracle", "T-SQL", "PL/SQL", "EF Core", "Dapper", "MongoDB", "SQLite", "Kafka"]
+      "items": ["PostgreSQL", "SQL Server", "Redis", "MongoDB", "MySQL", "Oracle", "T-SQL", "EF Core", "Dapper", "Kafka", "MassTransit"]
     },
     {
       "title": "Cloud & DevOps",
-      "items": ["Azure", "AWS", "Git", "Azure DevOps", "Docker", "TeamCity", "SonarQube / SonarCloud"]
+      "items": ["Kubernetes", "Docker", "GitLab CI", "Azure", "AWS", "Git", "Azure DevOps", "TeamCity", "SonarQube / SonarCloud"]
     },
     {
       "title": "Methods & architecture",
-      "items": ["Agile/Scrum", "TDD", "GitFlow", "Clean Architecture", "MVC/MVVM", "Microservices", "Event-driven", "REST (JSON)", "SOAP (XML)"]
+      "items": ["Agile/Scrum", "TDD", "Clean Architecture", "CQRS", "Microservices", "gRPC", "Event-driven", "REST (JSON)", "OIDC", "SOAP (XML)"]
     }
   ]
 }
