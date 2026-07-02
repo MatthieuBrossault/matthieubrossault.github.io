@@ -1,10 +1,12 @@
 # Personal Portfolio Web
 
-Personal portfolio website: **Vite** + vanilla JavaScript, content in **JSON** (English / French).
+**Live:** [https://matthieubrossault.github.io](https://matthieubrossault.github.io)
+
+Personal portfolio: **Vite** + vanilla JavaScript, content in **JSON** (English / French).
 
 ## UI theme
 
-The layout and styles are based on the **vCard – Personal portfolio** template by [@codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio) (MIT). Styles live in `src/styles/vcard.css`; small overrides in `src/styles/main.css`. Static assets (icons, avatar placeholder, favicon) are under `public/vcard/`.
+Layout and styles from **vCard – Personal portfolio** by [@codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio) (MIT). `src/styles/vcard.css` + `src/styles/main.css`. Static assets under `public/vcard/`.
 
 ## Scripts
 
@@ -18,6 +20,8 @@ npm run preview  # preview production build
 ## Content
 
 - **`src/data/en.json`** / **`fr.json`** — copy, navigation, services, projects, contact, hero.
-- **`src/data/profile-detail.en.json`** / **`profile-detail.fr.json`** — detailed education, professional experience (roles, summaries, highlights, stack lines), skill list for progress bars, and grouped **skill map** (soft skills, sectors, tech stacks). Merged at runtime with the base locale file.
+- **`src/data/profile-detail.en.json`** / **`profile-detail.fr.json`** — education, experience, skills, skill map. Merged at runtime via `src/js/locale-data.js`.
 
-To update CV content from a new dossier de compétences, edit the `profile-detail.*.json` files (keep valid JSON).
+## Deployment
+
+GitHub Pages (user site), automated on push to **`master`**. See [docs/deployment-costs.md](docs/deployment-costs.md).

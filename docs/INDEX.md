@@ -1,17 +1,7 @@
-# Documentation index
+# Documentation
 
-Index of documentation for the personal portfolio project.
+| Doc | Description |
+|-----|-------------|
+| [Deployment & costs](deployment-costs.md) | Live URL, GitHub Pages + Actions, costs |
 
-| Section | Description |
-|--------|-------------|
-| [Overview](01-overview.md) | Goal, audience, purpose |
-| [Website architecture](02-website-architecture.md) | Site structure, projects section, IA proposal |
-| [Style & discoverability](03-style-and-discoverability.md) | Visual style, ATS/algorithm-friendly content, structured data |
-| [Profile data](04-profile-data.md) | Extracted GitHub/LinkedIn data for site content |
-| [References & inspiration](05-references.md) | Hostinger portfolio guide, tips, 24 sample portfolios |
-| [Specs](specs.md) | Solution specs (requirements, scope, constraints) |
-| [Progress](progress.md) | Development progress (backlog / in progress / done) |
-| [Deployment & costs](deployment-costs.md) | Chosen setup: GitHub Pages **user site**, Actions on **`master`**, costs |
-| [GitHub Pages deployment](github-pages-deployment.md) | Full guide: Vite `base`, workflow, assets (matches chosen setup) |
-| *TBD* | Setup & development |
-| *TBD* | Contributing |
+Project context for agents: [AGENTS.md](../AGENTS.md). Site content: [`src/data/`](../src/data/). Dev commands: [README.md](../README.md).

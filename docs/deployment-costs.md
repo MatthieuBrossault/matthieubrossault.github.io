@@ -1,51 +1,49 @@
-# Deployment setup & costs
+# Deployment
 
-Where the site runs and what it costs (monthly / yearly). Update when something changes.
+**Live site:** [https://matthieubrossault.github.io](https://matthieubrossault.github.io)
+
+Static portfolio built with Vite; GitHub Pages serves the **`dist/`** output.
 
 ---
 
-## Chosen setup (this project)
+## Current setup
 
-| Decision | Choice |
-|----------|--------|
+| Item | Value |
+|------|--------|
 | **Host** | [GitHub Pages](https://pages.github.com/) |
-| **URL type** | **User site** — `https://<username>.github.io/` (repo named `<username>.github.io`) |
-| **Build & publish** | **GitHub Actions** — workflow [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml) runs `npm ci`, `npm run build`, uploads **`dist/`** |
-| **Branch** | **`master`** (pushes trigger deploy) |
-| **Vite `base`** | **`'/'`** — matches site root; `/vcard/` assets work as-is |
-
-Step-by-step instructions and alternatives (e.g. project URL, asset caveats): [github-pages-deployment.md](github-pages-deployment.md).
+| **URL** | `https://matthieubrossault.github.io` (user site) |
+| **Publish** | [GitHub Actions](../.github/workflows/deploy.yml) — `npm ci`, `npm run build`, upload `dist/` |
+| **Branch** | `master` (push triggers deploy) |
+| **Vite `base`** | `'/'` in [`vite.config.js`](../vite.config.js) |
 
 ---
 
-## Hosting
-
-| Service | Role | Setup notes | Monthly | Yearly |
-|---------|------|-------------|---------|--------|
-| GitHub Pages | Static site | **This repo:** Actions → `dist/`. Not “Deploy from a branch” with `/docs`. If you ever use a **project** URL (`user.github.io/repo-name/`), set `base: '/repo-name/'` in `vite.config.js` before build. | €0 | €0 |
-
----
-
-## Domain (optional)
-
-| Item | Registrar / DNS | Setup notes | Monthly | Yearly |
-|------|----------------|-------------|---------|--------|
-| *e.g. yourname.com* | | | ~€1–2 | ~€12–24 |
-
----
-
-## Other (email, forms, etc.)
-
-| Service | Purpose | Monthly | Yearly |
-|---------|---------|---------|--------|
-| *—* | | | |
-
----
-
-## Total
+## Costs
 
 | | Monthly | Yearly |
 |---|--------|--------|
+| GitHub Pages | €0 | €0 |
 | **Total** | €0 | €0 |
 
-**Hosting:** GitHub Pages (€0). **Domain:** optional paid registrar if you add a custom domain later.
+Optional custom domain later (registrar ~€12–24/year).
+
+---
+
+## Redeploy
+
+1. Push commits to **`master`**.
+2. Check **Actions** → workflow **Deploy static content to Pages**.
+3. Site updates within a few minutes.
+
+Manual run: **Actions** → workflow → **Run workflow**.
+
+---
+
+## Local preview
+
+```bash
+npm run build
+npm run preview
+```
+
+Default preview URL: http://localhost:4173

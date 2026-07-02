@@ -21,7 +21,7 @@ développeur expérimenté → **lead backend** → **team lead / responsable te
 Site **portfolio professionnel** (CV vivant) : mettre en avant compétences, expérience et projets pour la recherche d’emploi.
 
 - **Stack :** Vite, JavaScript vanilla, CSS (thème vCard + surcouche `main.css`), contenu i18n **EN / FR**.
-- **Hébergement :** GitHub Pages (site utilisateur), déploiement via **GitHub Actions** sur la branche **`master`** — voir [docs/deployment-costs.md](docs/deployment-costs.md).
+- **Hébergement :** [GitHub Pages](https://matthieubrossault.github.io) — déploiement **GitHub Actions** sur **`master`** — voir [docs/deployment-costs.md](docs/deployment-costs.md).
 - **Contraintes :** un seul développeur, effort et coût minimaux ; site statique, pas de backend.
 
 Index documentation : [docs/INDEX.md](docs/INDEX.md).
@@ -43,8 +43,6 @@ Fusion au runtime dans [`src/js/locale-data.js`](src/js/locale-data.js) (`mergeP
 
 Fichiers de référence (non servis par le site) : CV PDF et dossier compétences dans le même dossier — utiles pour enrichir les JSON, pas pour les citer tels quels côté web sans extraction.
 
-[`docs/04-profile-data.md`](docs/04-profile-data.md) reste un **complément** (extrait GitHub/LinkedIn, notes) ; en cas d’écart, **`src/data` prime** pour le contenu publié.
-
 ---
 
 ## Structure code utile
@@ -65,14 +63,13 @@ Fichiers de référence (non servis par le site) : CV PDF et dossier compétence
 2. **Ton :** professionnel, factuel, orienté recruteurs FR ; bilingue EN pour lecteurs internationaux.
 3. **Périmètre :** changements minimaux ; pas de sur-ingénierie ; respecter les conventions du repo.
 4. **SEO / découvrabilité :** meta dans JSON, JSON-LD dans `index.html` — garder alignés avec `src/data`.
-5. **Docs :** mettre à jour [docs/progress.md](docs/progress.md) ou specs seulement si le périmètre du changement le justifie.
+5. **Docs :** mettre à jour [docs/deployment-costs.md](docs/deployment-costs.md) si le déploiement ou l’URL change.
 
 ---
 
 ## Pistes (suggestions pour le titulaire)
 
 - Aligner le **titre / sous-titre** (`hero`, `meta`) sur la cible **architecte solution** tout en reflétant le parcours lead/team lead dans `profile-detail.*.json`.
-- Compléter [`docs/04-profile-data.md`](docs/04-profile-data.md) depuis LinkedIn pour la veille, sans dupliquer inutilement ce qui est déjà dans `src/data`.
 - Ajouter 1–2 **études de cas** projets (contexte métier + décisions d’archi) dans les fiches projets JSON — utile pour des postes architecte.
 - Section ou article court **« veille / formation »** (optionnel) si l’objectif « rester à jour » doit être visible côté recruteur.
-- Vérifier que le site reste **lisible ATS** (structure sémantique, mots-clés cohérents avec le CV) — voir [docs/03-style-and-discoverability.md](docs/03-style-and-discoverability.md).
+- Vérifier que le site reste **lisible ATS** (structure sémantique, mots-clés cohérents avec le CV dans `src/data`).
