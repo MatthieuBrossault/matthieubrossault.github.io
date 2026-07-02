@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Matthieu Brossault — Ingénieur Fullstack .NET",
-    "description": "Portfolio de Matthieu Brossault, ingénieur fullstack .NET. Nantes, France. Développement web, .NET, Angular, React."
+    "title": "Matthieu Brossault — Tech Lead .NET",
+    "description": "Portfolio de Matthieu Brossault, Tech Lead .NET. Nantes, France. SaaS BTP, microservices .NET, React, architecture solution."
   },
   "hero": {
     "intro": "Je suis",
     "title": "Matthieu Brossault",
-    "subtitle": "Ingénieur Fullstack .NET et Architecte Web.",
+    "subtitle": "Tech Lead .NET — architecture & delivery produit.",
     "scroll": "Défiler"
   },
   "sidebar": {
@@ -17,7 +17,7 @@
   "about": {
     "label": "Qui je suis",
     "heading": "À propos",
-    "bio": "Ingénieur Fullstack .NET, expérience en développement web front-end et back-end. Focus sur l'architecture propre et les outils modernes.",
+    "bio": "Tech Lead .NET, parcours fullstack et responsable technique. Spécialisé en architecture logicielle, microservices et produits SaaS B2B — écosystème .NET, React et cloud. Actuellement sur ELA Build (BTP / maîtrise d’œuvre).",
     "location": "Nantes, France"
   },
   "services": {
@@ -26,17 +26,17 @@
       {
         "icon": "dev",
         "title": "Développement web",
-        "text": "Applications web modernes avec .NET, Angular et React."
+        "text": "SaaS B2B : .NET 8, React, PostgreSQL — du back-end au front."
       },
       {
         "icon": "design",
         "title": "Architecture & conception",
-        "text": "Architecture propre, APIs et front-end maintenable."
+        "text": "Microservices, CQRS, APIs REST/gRPC, revue technique et cadrage produit."
       },
       {
         "icon": "app",
-        "title": "Livraison fullstack",
-        "text": "Fonctionnalités de bout en bout, de la base de données à l’UI."
+        "title": "Encadrement technique",
+        "text": "Tech lead : design reviews, priorisation et delivery en équipe agile."
       },
       {
         "icon": "photo",

@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Matthieu Brossault — Fullstack .NET Engineer",
-    "description": "Portfolio of Matthieu Brossault, Fullstack .NET Engineer. Nantes, France. Web development, .NET, Angular, React."
+    "title": "Matthieu Brossault — .NET Tech Lead",
+    "description": "Portfolio of Matthieu Brossault, .NET Tech Lead. Nantes, France. Construction SaaS, .NET microservices, React, solution architecture."
   },
   "hero": {
     "intro": "Hi, I'm",
     "title": "Matthieu Brossault",
-    "subtitle": "Fullstack .NET Engineer & Web Architect.",
+    "subtitle": ".NET Tech Lead — architecture & product delivery.",
     "scroll": "Scroll"
   },
   "sidebar": {
@@ -17,7 +17,7 @@
   "about": {
     "label": "Who I am",
     "heading": "About me",
-    "bio": "Fullstack .NET Engineer with experience in web development, front-end and back-end. Focus on clean architecture and modern tooling.",
+    "bio": ".NET Tech Lead with a fullstack and engineering-management background. Focus on software architecture, microservices, and B2B SaaS — .NET ecosystem, React, and cloud. Currently on ELA Build (construction / project management).",
     "location": "Nantes, France"
   },
   "services": {
@@ -26,17 +26,17 @@
       {
         "icon": "dev",
         "title": "Web development",
-        "text": "Building modern web applications with .NET, Angular, and React."
+        "text": "B2B SaaS: .NET 8, React, PostgreSQL — backend through UI."
       },
       {
         "icon": "design",
         "title": "Architecture & design",
-        "text": "Clean architecture, APIs, and maintainable front-end structure."
+        "text": "Microservices, CQRS, REST/gRPC APIs, design reviews and product scoping."
       },
       {
         "icon": "app",
-        "title": "Fullstack delivery",
-        "text": "End-to-end features from database to UI."
+        "title": "Technical leadership",
+        "text": "Tech lead: design reviews, prioritization, and agile team delivery."
       },
       {
         "icon": "photo",
