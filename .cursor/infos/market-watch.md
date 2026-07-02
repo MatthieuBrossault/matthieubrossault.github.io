@@ -69,9 +69,9 @@ Recommandations alignées sur l’objectif **architecte solution** (.NET / SaaS 
 
 ---
 
-## Liens avec les autres docs
+## Liens
 
 - [Formation & études](training.md) — approfondir les sujets repérés en veille
 - [Diplômes & certifications](market-credentials.md) — titres à passer pour le marché FR
 - [Projets portfolio](portfolio-projects.md) — matérialiser la veille en preuves publiques
-- [Contenu & présentation du site](site-content.md) — refléter le positionnement sur le site live
+- [Contenu & présentation du site](../plans/site-content.md) — recommandations futures sur le site live

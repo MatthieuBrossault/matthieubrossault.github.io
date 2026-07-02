@@ -194,7 +194,7 @@ Ajuster la roadmap certifs selon **tes offres cibles**, pas selon le catalogue c
 
 - [Formation & études](training.md) — parcours compétences 6–12 mois
 - [Veille marché](market-watch.md) — sources et rituel
-- [SEO & ATS](market-seo.md) — mots-clés CV / site
+- [SEO & ATS](../plans/market-seo.md) — mots-clés CV / site
 - [Projets portfolio](portfolio-projects.md) — preuves complémentaires aux certifs
 
 ---

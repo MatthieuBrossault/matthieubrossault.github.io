@@ -38,7 +38,7 @@ Couche 3 — Narratif ELA Build (sans code)       → étude de cas texte + stac
 | Remplacer / compléter les 5 cartes GitHub par **2 featured + 3 secondaires** | Faible | Fort |
 | Lien vers **1 repo architecture** (voir #2) en tête de liste | Faible | Fort |
 
-Voir détail contenu : [site-content.md](site-content.md).
+Voir détail contenu : [site-content.md](../plans/site-content.md).
 
 ### 2. Repo « architecture lab » (nouveau — priorité haute)
 
@@ -120,4 +120,4 @@ Fiche à rédiger dans `src/data` (nouveau champ ou projet dédié) :
 
 - [Veille](market-watch.md)
 - [Formation](training.md)
-- [Site & contenu](site-content.md)
+- [Site & contenu](../plans/site-content.md)

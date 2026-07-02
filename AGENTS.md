@@ -21,7 +21,7 @@ développeur expérimenté → **lead backend** → **team lead / responsable te
 Site **portfolio professionnel** (CV vivant) : mettre en avant compétences, expérience et projets pour la recherche d’emploi.
 
 - **Stack :** Vite, JavaScript vanilla, CSS (thème vCard + surcouche `main.css`), contenu i18n **EN / FR**.
-- **Hébergement :** [GitHub Pages](https://matthieubrossault.github.io) — déploiement **GitHub Actions** sur **`master`** — voir [docs/deployment/hosting-and-costs.md](docs/deployment/hosting-and-costs.md).
+- **Hébergement :** [GitHub Pages](https://matthieubrossault.github.io) — déploiement **GitHub Actions** sur **`master`** — voir [docs/deployment.md](docs/deployment.md).
 - **Contraintes :** un seul développeur, effort et coût minimaux ; site statique, pas de backend.
 
 Index documentation : [docs/INDEX.md](docs/INDEX.md).
@@ -63,17 +63,25 @@ Fichiers de référence (non servis par le site) : CV PDF et dossier compétence
 2. **Ton :** professionnel, factuel, orienté recruteurs FR ; bilingue EN pour lecteurs internationaux.
 3. **Périmètre :** changements minimaux ; pas de sur-ingénierie ; respecter les conventions du repo.
 4. **SEO / découvrabilité :** meta dans JSON, JSON-LD dans `index.html` — garder alignés avec `src/data`.
-5. **Docs :** mettre à jour [docs/deployment/hosting-and-costs.md](docs/deployment/hosting-and-costs.md) si le déploiement change ; recommandations carrière dans [docs/career/](docs/career/INDEX.md).
+5. **Docs site (`docs/`) :** à **mettre à jour à chaque changement** livré sur le site (stack, architecture, layout, déploiement). Ces fichiers décrivent le site **à l’instant T** — voir [docs/INDEX.md](docs/INDEX.md).
+6. **Infos carrière (`.cursor/infos/`) :** veille, formation, certifications, projets perso — hors périmètre du site live.
+7. **Plans site (`.cursor/plans/`) :** recommandations et évolutions **futures** du portfolio (contenu, SEO, UI).
 
 ---
 
-## Recommandations (docs)
+## Documentation (3 zones)
+
+| Zone | Rôle | Index |
+|------|------|-------|
+| **`docs/`** | Site actuel (tech, archi, UI, déploiement) — **maintenir à jour** | [docs/INDEX.md](docs/INDEX.md) |
+| **`.cursor/infos/`** | Carrière (veille, formation, certifs, projets GitHub) | [.cursor/infos/INDEX.md](.cursor/infos/INDEX.md) |
+| **`.cursor/plans/`** | Évolutions site à planifier / implémenter | [.cursor/plans/INDEX.md](.cursor/plans/INDEX.md) |
 
 | Sujet | Fichier |
 |-------|---------|
-| Veille marché & tech | [career/market-watch.md](docs/career/market-watch.md) |
-| Diplômes & certifications (FR) | [career/market-credentials.md](docs/career/market-credentials.md) |
-| Formation & études | [career/training.md](docs/career/training.md) |
-| Projets portfolio | [career/portfolio-projects.md](docs/career/portfolio-projects.md) |
-| Contenu du site | [career/site-content.md](docs/career/site-content.md) |
-| SEO, ATS & marché | [career/market-seo.md](docs/career/market-seo.md) |
+| Veille marché & tech | [.cursor/infos/market-watch.md](.cursor/infos/market-watch.md) |
+| Diplômes & certifications (FR) | [.cursor/infos/market-credentials.md](.cursor/infos/market-credentials.md) |
+| Formation & études | [.cursor/infos/training.md](.cursor/infos/training.md) |
+| Projets portfolio | [.cursor/infos/portfolio-projects.md](.cursor/infos/portfolio-projects.md) |
+| Contenu du site (à faire) | [.cursor/plans/site-content.md](.cursor/plans/site-content.md) |
+| SEO, ATS & marché (à faire) | [.cursor/plans/market-seo.md](.cursor/plans/market-seo.md) |

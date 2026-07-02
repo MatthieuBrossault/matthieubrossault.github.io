@@ -282,15 +282,15 @@ Pour l’objectif **effort minimal** du repo : **P0 + P1 + PDF (P2)** suffisent.
 | Position requêtes brand | Search Console | Mensuel |
 | Trafic referrers (LinkedIn) | Analytics (optionnel, respect RGPD) | Mensuel |
 | Taux de réponse candidatures | Tableau perso | Continu |
-| Cohérence mots-clés vs offres visées | [market-watch.md](market-watch.md) | Hebdo |
+| Cohérence mots-clés vs offres visées | [market-watch.md](../infos/market-watch.md) | Hebdo |
 
 ---
 
 ## 9. Liens
 
 - [Contenu & présentation du site](site-content.md)
-- [Veille & mots-clés marché](market-watch.md)
-- [Projets portfolio](portfolio-projects.md)
+- [Veille & mots-clés marché](../infos/market-watch.md)
+- [Projets portfolio](../infos/portfolio-projects.md)
 - [AGENTS.md](../../AGENTS.md) — objectifs carrière
 
 ---

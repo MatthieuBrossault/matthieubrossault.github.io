@@ -143,7 +143,7 @@ Déjà enrichie. Affiner pour **recruteurs qui scannent en 10 s** :
 
 ## Liens
 
-- [Veille](market-watch.md)
-- [Formation](training.md)
-- [Projets](portfolio-projects.md)
+- [Veille](../infos/market-watch.md)
+- [Formation](../infos/training.md)
+- [Projets](../infos/portfolio-projects.md)
 - [AGENTS.md](../../AGENTS.md) — contexte agent
