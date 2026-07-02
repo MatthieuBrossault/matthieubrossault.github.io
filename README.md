@@ -24,4 +24,12 @@ npm run preview  # preview production build
 
 ## Deployment
 
-GitHub Pages (user site), automated on push to **`master`**. See [docs/deployment/hosting-and-costs.md](docs/deployment/hosting-and-costs.md).
+GitHub Pages (user site), automated on push to **`master`**. See [docs/deployment.md](docs/deployment.md).
+
+## Documentation
+
+| Zone | Purpose |
+|------|---------|
+| [docs/INDEX.md](docs/INDEX.md) | Current site (stack, architecture, UI, deployment) |
+| [.cursor/infos/INDEX.md](.cursor/infos/INDEX.md) | Career context (watch, training, certs) |
+| [.cursor/plans/INDEX.md](.cursor/plans/INDEX.md) | Planned site improvements |
