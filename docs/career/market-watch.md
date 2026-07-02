@@ -13,7 +13,7 @@ Recommandations alignées sur l’objectif **architecte solution** (.NET / SaaS 
 | **Haute** | **Multi-tenant SaaS** (isolation données, coût, compliance RGPD France) | Différenciant sur ELA Build ; sujet fréquent en entretien architecte |
 | **Haute** | **Kubernetes & observabilité** (SLO, traces, coût cluster) | Stack prod ELA ; gap classique lead → architecte |
 | **Moyenne** | **IA appliquée** (RAG, vector DB, coût/latence, gouvernance) | Trajectoire ELA Build (FTS, pgvector) — savoir cadrer sans hype |
-| **Moyenne** | **Marché emploi FR** remote senior/lead/archi .NET | Adapter pitch et mots-clés CV |
+| **Moyenne** | **Marché emploi FR** remote senior/lead/archi .NET ; **certifs & diplômes** demandés | Adapter pitch, CV et roadmap [market-credentials.md](market-credentials.md) |
 | **Moyenne** | **React / écosystème front** (TanStack, perf, accessibilité) | Crédibilité fullstack sur postes lead/archi |
 | **Basse** | Hype cycles (nouveaux LLM, frameworks JS éphémères) | Lecture légère ; ne pas y investir du temps formation |
 
@@ -72,5 +72,6 @@ Recommandations alignées sur l’objectif **architecte solution** (.NET / SaaS 
 ## Liens avec les autres docs
 
 - [Formation & études](training.md) — approfondir les sujets repérés en veille
+- [Diplômes & certifications](market-credentials.md) — titres à passer pour le marché FR
 - [Projets portfolio](portfolio-projects.md) — matérialiser la veille en preuves publiques
 - [Contenu & présentation du site](site-content.md) — refléter le positionnement sur le site live

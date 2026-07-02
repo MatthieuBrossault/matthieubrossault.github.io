@@ -5,6 +5,7 @@ Recommandations pour la recherche d’emploi, la montée en compétence et l’e
 | Document | Description |
 |----------|-------------|
 | [Veille marché & tech](market-watch.md) | Sources, rituel, mots-clés à surveiller |
+| [Diplômes & certifications (FR)](market-credentials.md) | Titres, certifs cloud/archi/agile — ROI marché français |
 | [Formation & études](training.md) | Parcours 6–12 mois vers architecte solution |
 | [Projets portfolio](portfolio-projects.md) | Projets perso et mise en avant (ELA, lab archi) |
 | [Contenu du site](site-content.md) | Pitch, sections, checklist `src/data` |

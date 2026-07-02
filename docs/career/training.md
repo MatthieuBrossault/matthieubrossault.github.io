@@ -40,10 +40,13 @@ Plan de montée en compétence vers **architecte solution**, en complément du p
 
 ### Phase 3 — Crédibilité marché FR (optionnel)
 
+Voir le détail diplômes / certifications / ROI : [market-credentials.md](market-credentials.md).
+
 | Sujet | Ressource | ROI |
 |-------|-----------|-----|
-| **Certification légère** | [AWS Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/) ou [AZ-900](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/) | Mots-clés ATS + vocabulaire cloud ; 1–2 semaines prep |
-| **Anglais technique** | Déjà bilingue site — maintenir CV EN à jour | Suffisant pour la plupart des offres FR |
+| **Certification fondation cloud** | [AZ-900](https://learn.microsoft.com/fr-fr/credentials/certifications/azure-fundamentals/) ou [AWS Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/) | Mots-clés ATS ; 1–2 semaines — **P1** |
+| **Kubernetes** | [CKAD](https://www.cncf.io/certification/ckad/) (après labs) | Différenciant SaaS / K8s — **P2** |
+| **Anglais technique** | CV EN à jour | Suffisant pour la plupart des offres FR |
 
 ---
 
@@ -51,7 +54,7 @@ Plan de montée en compétence vers **architecte solution**, en complément du p
 
 - Cours React/Angular « débutant » (Traversy, HandsOnReact déjà dans le portfolio)
 - Encore un tuto CRUD .NET sans angle architecture
-- Certifications longues (Azure Solutions Architect Expert) **avant** d’avoir matérialisé 2–3 études de cas — ROI temps faible en recherche active
+- Certifications longues (**AZ-305**, mastère) **avant** 2–3 preuves d’architecture — voir [market-credentials.md](market-credentials.md)
 
 ---
 
