@@ -1,4 +1,5 @@
 import { escapeHtml, iconPath, skillWidth, socialIonName } from './dom-utils.js';
+import { projectImageUrl } from './project-images.js';
 
 export function renderAboutText(d) {
   const el = document.getElementById('about-text');
@@ -137,6 +138,8 @@ export function renderProjects(d) {
     .map((p) => {
       const category = p.stack?.length ? escapeHtml(p.stack[0]) : 'Project';
       const href = escapeHtml(p.repoUrl ?? '#');
+      const imgSrc = projectImageUrl(p.id) ?? '/vcard/logo.svg';
+      const imgAlt = escapeHtml(p.title ?? 'Project');
       return `
     <li class="project-item active">
       <a href="${href}" target="_blank" rel="noopener noreferrer">
@@ -144,7 +147,7 @@ export function renderProjects(d) {
           <div class="project-item-icon-box">
             <ion-icon name="open-outline"></ion-icon>
           </div>
-          <img src="/vcard/logo.svg" alt="" loading="lazy">
+          <img src="${imgSrc}" alt="${imgAlt}" loading="lazy" width="400" height="200">
         </figure>
         <h3 class="project-title">${escapeHtml(p.title ?? '')}</h3>
         <p class="project-category">${category}</p>
