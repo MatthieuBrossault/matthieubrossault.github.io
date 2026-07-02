@@ -1,7 +1,7 @@
 # Documentation du site (état actuel)
 
 Documentation **à jour avec le code** : stack, architecture, UI, déploiement.  
-**Mettre à jour ces fichiers** lors de tout changement technique ou structurel du site (voir [AGENTS.md](../AGENTS.md)).
+**Mettre à jour ces fichiers** lors de tout changement technique ou structurel du site — règle [.cursor/rules/docs-sync.mdc](../.cursor/rules/docs-sync.mdc) (contexte : [AGENTS.md](../AGENTS.md)).
 
 **Live :** [https://matthieubrossault.github.io](https://matthieubrossault.github.io)
 
