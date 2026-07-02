@@ -12,9 +12,9 @@ Static portfolio built with Vite; GitHub Pages serves the **`dist/`** output.
 |------|--------|
 | **Host** | [GitHub Pages](https://pages.github.com/) |
 | **URL** | `https://matthieubrossault.github.io` (user site) |
-| **Publish** | [GitHub Actions](../.github/workflows/deploy.yml) — `npm ci`, `npm run build`, upload `dist/` |
+| **Publish** | [GitHub Actions](../../.github/workflows/deploy.yml) — `npm ci`, `npm run build`, upload `dist/` |
 | **Branch** | `master` (push triggers deploy) |
-| **Vite `base`** | `'/'` in [`vite.config.js`](../vite.config.js) |
+| **Vite `base`** | `'/'` in [`vite.config.js`](../../vite.config.js) |
 
 ---
 
@@ -47,3 +47,7 @@ npm run preview
 ```
 
 Default preview URL: http://localhost:4173
+
+---
+
+[← Déploiement](INDEX.md) · [Documentation](../INDEX.md)
