@@ -54,6 +54,7 @@ Fichiers de référence (non servis par le site) : CV PDF et dossier compétence
 | `src/js/i18n.js` | Locale, `localStorage`, `data-i18n` |
 | `public/vcard/` | Assets statiques (avatar, icônes) |
 | `.cursor/rules/js-css-line-limits.mdc` | Fichiers JS/CSS projet : max ~300 lignes, découper si besoin |
+| `.cursor/rules/docs-sync.mdc` | Synchro `docs/` après changement stack / archi / layout / déploiement |
 
 ---
 
@@ -63,7 +64,7 @@ Fichiers de référence (non servis par le site) : CV PDF et dossier compétence
 2. **Ton :** professionnel, factuel, orienté recruteurs FR ; bilingue EN pour lecteurs internationaux.
 3. **Périmètre :** changements minimaux ; pas de sur-ingénierie ; respecter les conventions du repo.
 4. **SEO / découvrabilité :** meta dans JSON, JSON-LD dans `index.html` — garder alignés avec `src/data`.
-5. **Docs site (`docs/`) :** à **mettre à jour à chaque changement** livré sur le site (stack, architecture, layout, déploiement). Ces fichiers décrivent le site **à l’instant T** — voir [docs/INDEX.md](docs/INDEX.md).
+5. **Docs site (`docs/`) :** décrit le site **à l’instant T** — voir [docs/INDEX.md](docs/INDEX.md). Obligation de synchro : [.cursor/rules/docs-sync.mdc](.cursor/rules/docs-sync.mdc).
 6. **Infos carrière (`.cursor/infos/`) :** veille, formation, certifications, projets perso — hors périmètre du site live.
 7. **Plans site (`.cursor/plans/`) :** recommandations et évolutions **futures** du portfolio (contenu, SEO, UI).
 

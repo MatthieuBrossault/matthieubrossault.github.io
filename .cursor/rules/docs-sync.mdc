@@ -1,0 +1,33 @@
+---
+description: Keep docs/ in sync when changing site stack, architecture, layout, or deployment.
+globs: "{src/main.js,src/js/**,src/styles/**,index.html,vite.config.js,package.json,.github/workflows/**,docs/**}"
+alwaysApply: false
+---
+
+# Site documentation sync (`docs/`)
+
+`docs/` describes the **live site at time T** — not career notes (`.cursor/infos/`) or future plans (`.cursor/plans/`).
+
+## When to update
+
+After any **delivered** change to stack, architecture, layout, or deployment, update the matching doc in the **same PR / session**. Do not defer.
+
+| Change type | Update |
+|-------------|--------|
+| Dependencies, build scripts, tooling | [docs/tech-stack.md](../../docs/tech-stack.md) |
+| New/split JS modules, data flow, render pipeline | [docs/architecture.md](../../docs/architecture.md) |
+| HTML shell, CSS, responsive, vCard layout | [docs/layout-and-ui.md](../../docs/layout-and-ui.md) |
+| GitHub Actions, `base` URL, hosting, costs | [docs/deployment.md](../../docs/deployment.md) |
+
+## Out of scope for `docs/`
+
+- **CV / pitch only** (`src/data/**`) → no `docs/` update unless rendering or i18n behavior changes.
+- **Career recommendations** → `.cursor/infos/` or `.cursor/plans/`, not `docs/`.
+
+## Checklist before finishing
+
+1. Identify which doc(s) are affected.
+2. Edit them to match the code — remove stale sections.
+3. If `docs/INDEX.md` file list or zones change, update it too.
+
+Index: [docs/INDEX.md](../../docs/INDEX.md)
