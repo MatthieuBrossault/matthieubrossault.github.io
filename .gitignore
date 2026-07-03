@@ -30,5 +30,9 @@ npm-debug.log*
 # Generated outputs (regenerate via npm run generate:*)
 generated/
 
+# CV PDFs synced for site (see scripts/sync-cv-to-public.js)
+public/cv/*.pdf
+public/cv/manifest.json
+
 # Sample data (CV, dossier, cover letter)
 samples/

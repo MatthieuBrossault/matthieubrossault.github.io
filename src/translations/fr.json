@@ -48,7 +48,8 @@
     "articleTitle": "CV",
     "educationTitle": "Formation",
     "experienceTitle": "Expérience",
-    "skillsTitle": "Compétences"
+    "skillsTitle": "Compétences",
+    "downloadCv": "Télécharger le CV (PDF)"
   },
   "projects": {
     "label": "Ce que j'ai construit",
