@@ -1,0 +1,89 @@
+{
+  "targetRole": {
+    "fr": "Architecte solution — ingénierie web",
+    "en": "Solution Architect — Web Engineering"
+  },
+  "headline": {
+    "fr": "Tech Lead .NET | Architecte solution (SaaS B2B, microservices)",
+    "en": ".NET Tech Lead | Solution Architect (B2B SaaS, microservices)"
+  },
+  "professionalSummary": {
+    "fr": "Tech Lead .NET avec plus de 10 ans d'expérience, basé à Nantes (full remote France). Spécialisé en architecture logicielle, microservices et SaaS B2B multi-tenant (.NET 8, React, PostgreSQL, Kubernetes). Encadrement technique, design reviews et delivery agile. Trajectoire vers des rôles d'architecte solution sur produits à fort enjeu technique.",
+    "en": ".NET Tech Lead with 10+ years of experience, based in Nantes (full remote in France). Specialized in software architecture, microservices, and multi-tenant B2B SaaS (.NET 8, React, PostgreSQL, Kubernetes). Technical leadership, design reviews, and agile delivery. Progression toward solution architect roles on high-stakes products."
+  },
+  "cvSummary": {
+    "fr": "Tech Lead .NET, 10 ans d'XP. Architecture microservices & SaaS multi-tenant (.NET 8, React, PostgreSQL, Kubernetes). Design reviews, encadrement agile, cloud Azure/AWS. Full remote France.",
+    "en": ".NET Tech Lead, 10+ years. Microservices & multi-tenant SaaS architecture (.NET 8, React, PostgreSQL, Kubernetes). Design reviews, agile leadership, Azure/AWS. Full remote in France."
+  },
+  "availability": {
+    "fr": "Ouvert aux missions full remote en France",
+    "en": "Open to full-remote roles in France"
+  },
+  "atsKeywords": {
+    "fr": [
+      "Architecte solution",
+      "Lead technique",
+      "Tech Lead",
+      ".NET",
+      "C#",
+      "microservices",
+      "SaaS",
+      "multi-tenant",
+      "architecture",
+      "PostgreSQL",
+      "React",
+      "TypeScript",
+      "Kubernetes",
+      "Docker",
+      "gRPC",
+      "CQRS",
+      "event-driven",
+      "API REST",
+      "Azure",
+      "AWS",
+      "agile",
+      "Scrum",
+      "télétravail",
+      "remote",
+      "Nantes",
+      "France"
+    ],
+    "en": [
+      "Solution Architect",
+      "Technical Lead",
+      "Tech Lead",
+      ".NET",
+      "C#",
+      "microservices",
+      "SaaS",
+      "multi-tenant",
+      "architecture",
+      "PostgreSQL",
+      "React",
+      "TypeScript",
+      "Kubernetes",
+      "Docker",
+      "gRPC",
+      "CQRS",
+      "event-driven",
+      "REST API",
+      "Azure",
+      "AWS",
+      "agile",
+      "Scrum",
+      "remote",
+      "Nantes",
+      "France"
+    ]
+  },
+  "coverLetter": {
+    "signature": {
+      "fr": "Cordialement,",
+      "en": "Kind regards,"
+    },
+    "defaultRecipient": {
+      "fr": "Madame, Monsieur,",
+      "en": "Dear Hiring Manager,"
+    }
+  }
+}

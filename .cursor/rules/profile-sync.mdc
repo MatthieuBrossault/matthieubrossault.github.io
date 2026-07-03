@@ -1,0 +1,53 @@
+---
+description: Keep src/data/profile.*.json up to date when the user shares career facts or materials.
+alwaysApply: true
+---
+
+# Profile data sync (`src/data/`)
+
+When the user provides **new career information** (facts, dates, role changes, missions, skills, certifications, LinkedIn/CV excerpts, DOCX/PDF dossier, verbal updates), **update the profile JSON in the same session** — do not only acknowledge or plan.
+
+## Source of truth
+
+| File | Update when |
+|------|-------------|
+| [`src/data/profile.fr.json`](../../src/data/profile.fr.json) | Any professional fact (French copy) |
+| [`src/data/profile.en.json`](../../src/data/profile.en.json) | **Same changes in English** — keep structure aligned |
+
+Downstream: site resume ([`locale-data.js`](../../src/js/locale-data.js)), PDF generators ([`scripts/generators/`](../../scripts/generators/)).
+
+## Where to put updates
+
+| User input | `profile.*.json` target |
+|------------|---------------------------|
+| Name, email, location, links (LinkedIn, GitHub, personal site), years of XP | `identity` |
+| Spoken languages | `languagesSpoken` |
+| Job / mission (role, company, dates, stack, bullets) | `experience.items[]` — **newest first** |
+| ESN-style detail (team, env, tasks) | same item → `dossier.teamAndMethod`, `technicalEnvironment`, `tasks` |
+| Education, diploma | `education.items` |
+| Skills list / skill map | `skills.items`, `skillCategories` |
+| Dossier section labels, savoir-faire, sectors, tech grid | `dossier.*` |
+
+## Also update (only if relevant)
+
+| File | When |
+|------|------|
+| [`src/translations/fr.json`](../../src/translations/fr.json) / [`en.json`](../../src/translations/en.json) | Pitch changes: `hero`, `about.bio`, `meta`, `services`, `projects` |
+| [`scripts/generators/generator-config.json`](../../scripts/generators/generator-config.json) | Target role, ATS keywords, CV/letter summaries — **not** raw experience |
+
+## Rules
+
+1. **Never invent** employers, dates, stacks, or achievements — use only what the user or attached material states.
+2. **Always update FR + EN** when the field exists in both files.
+3. **Remove or fix stale entries** (old dates, ended roles) when the user indicates a change.
+4. **Do not** put long career narrative only in `.cursor/infos/` or chat — persist facts in `profile.*.json`.
+5. Reference files in `src/data/` (e.g. sample DOCX/PDF) are **inputs to extract into profile**, not served by the site.
+
+## Checklist before finishing
+
+- [ ] `profile.fr.json` and `profile.en.json` updated and structurally consistent
+- [ ] New/updated experience has `dossier` blocks if ESN-level detail was provided
+- [ ] `src/translations/` updated only if public pitch/copy should change
+- [ ] Mention `npm run generate:cv` / `generate:dossier` if PDFs should be regenerated
+
+Context: [AGENTS.md](../../AGENTS.md)

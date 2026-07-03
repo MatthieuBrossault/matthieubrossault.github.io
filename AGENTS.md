@@ -28,20 +28,33 @@ Index documentation : [docs/INDEX.md](docs/INDEX.md).
 
 ---
 
-## Données profil — source de vérité : `src/data/`
+## Données — deux zones
 
-**Les informations affichées sur le site et à utiliser pour toute mise à jour de contenu sont dans `src/data/`.** Ne pas inventer de parcours ou de compétences : s’appuyer sur ces fichiers (et les aligner EN/FR).
+### Profil professionnel — `src/data/` (source de vérité carrière)
+
+**Mettre à jour ces fichiers** pour refléter la vie professionnelle (site + générateurs PDF).
 
 | Fichier | Rôle |
 |---------|------|
-| [`src/data/en.json`](src/data/en.json) | Copy courte EN : meta, hero, about, services, skills résumés, projets, contact, nav |
-| [`src/data/fr.json`](src/data/fr.json) | Même structure en français |
-| [`src/data/profile-detail.en.json`](src/data/profile-detail.en.json) | CV détaillé EN : expériences, formations, catégories de compétences |
-| [`src/data/profile-detail.fr.json`](src/data/profile-detail.fr.json) | CV détaillé FR |
+| [`src/data/profile.fr.json`](src/data/profile.fr.json) | Identité, expériences (avec blocs dossier), formation, compétences, métadonnées dossier ESN |
+| [`src/data/profile.en.json`](src/data/profile.en.json) | Même structure en anglais |
 
-Fusion au runtime dans [`src/js/locale-data.js`](src/js/locale-data.js) (`mergeProfile` : base + détail par locale).
+Fusion site : [`src/js/locale-data.js`](src/js/locale-data.js) combine `src/translations/` + `src/data/profile.*`.
 
-Fichiers de référence (non servis par le site) : CV PDF et dossier compétences dans le même dossier — utiles pour enrichir les JSON, pas pour les citer tels quels côté web sans extraction.
+Fichiers de référence (non servis par le site) : CV PDF et dossier DOCX dans `src/data/` — utiles pour enrichir le profil, pas à citer tels quels côté web.
+
+### Textes du site — `src/translations/`
+
+| Fichier | Rôle |
+|---------|------|
+| [`src/translations/fr.json`](src/translations/fr.json) | Meta, hero, about, services, projets, contact, nav (FR) |
+| [`src/translations/en.json`](src/translations/en.json) | Même structure (EN) |
+
+### Générateurs PDF — `scripts/generators/`
+
+| Fichier | Rôle |
+|---------|------|
+| [`scripts/generators/generator-config.json`](scripts/generators/generator-config.json) | Cible poste, mots-clés ATS, résumés CV/lettre (hors données profil) |
 
 ---
 
@@ -55,15 +68,17 @@ Fichiers de référence (non servis par le site) : CV PDF et dossier compétence
 | `public/vcard/` | Assets statiques (avatar, icônes) |
 | `.cursor/rules/js-css-line-limits.mdc` | Fichiers JS/CSS projet : max ~300 lignes, découper si besoin |
 | `.cursor/rules/docs-sync.mdc` | Synchro `docs/` après changement stack / archi / layout / déploiement |
+| `.cursor/rules/profile-sync.mdc` | Synchro `src/data/profile.*.json` quand l’utilisateur donne des infos carrière |
+| `scripts/generators/` | Générateurs PDF (CV, dossier de compétences, lettre de motivation) → `generated/` |
 
 ---
 
 ## Consignes pour les agents
 
-1. **Contenu CV / pitch :** modifier `src/data/*.json` (les **deux** langues si le champ existe dans les deux) ; vérifier cohérence avec l’objectif **architecte solution** sans sur-vendre.
+1. **Profil / CV :** modifier `src/data/profile.fr.json` et `profile.en.json` (aligner EN/FR) ; pitch site dans `src/translations/`. **Règle :** [.cursor/rules/profile-sync.mdc](.cursor/rules/profile-sync.mdc) — appliquer dès que l’utilisateur partage des infos ou documents carrière.
 2. **Ton :** professionnel, factuel, orienté recruteurs FR ; bilingue EN pour lecteurs internationaux.
 3. **Périmètre :** changements minimaux ; pas de sur-ingénierie ; respecter les conventions du repo.
-4. **SEO / découvrabilité :** meta dans JSON, JSON-LD dans `index.html` — garder alignés avec `src/data`.
+4. **SEO / découvrabilité :** meta dans `src/translations/`, JSON-LD dans `index.html` — garder alignés avec le profil.
 5. **Docs site (`docs/`) :** décrit le site **à l’instant T** — voir [docs/INDEX.md](docs/INDEX.md). Obligation de synchro : [.cursor/rules/docs-sync.mdc](.cursor/rules/docs-sync.mdc).
 6. **Infos carrière (`.cursor/infos/`) :** veille, formation, certifications, projets perso — hors périmètre du site live.
 7. **Plans site (`.cursor/plans/`) :** recommandations et évolutions **futures** du portfolio (contenu, SEO, UI).

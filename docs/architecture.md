@@ -33,14 +33,14 @@ Pas de router URL : navigation par **onglets** (`data-page` + classe `active`).
 
 ---
 
-## Données — [`src/data/`](../src/data/)
+## Données
 
-| Fichier | Contenu |
-|---------|---------|
-| `en.json` / `fr.json` | Meta, hero, about, services, projects, contact, nav |
-| `profile-detail.en.json` / `profile-detail.fr.json` | Expériences, formation, skills détaillés, skill map |
+| Zone | Fichiers | Rôle |
+|------|----------|------|
+| [`src/translations/`](../src/translations/) | `en.json`, `fr.json` | Textes UI du site (meta, hero, about, services, projets, nav) |
+| [`src/data/`](../src/data/) | `profile.en.json`, `profile.fr.json` | Profil professionnel (expériences, formation, compétences, blocs dossier) |
 
-[`mergeProfile`](../src/js/locale-data.js) : le détail écrase/complète la base (education, experience, skills, skillCategories).
+[`mergeSiteData`](../src/js/locale-data.js) : traductions + profil → objet consommé par `render.js` / `i18n.js`.
 
 ---
 

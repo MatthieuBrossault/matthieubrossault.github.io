@@ -20,6 +20,7 @@ export function socialIonName(label) {
   const l = label.toLowerCase();
   if (l.includes('linkedin')) return 'logo-linkedin';
   if (l.includes('github')) return 'logo-github';
+  if (l.includes('portfolio') || l.includes('site perso') || l.includes('site')) return 'globe-outline';
   if (l.includes('twitter') || l === 'x') return 'logo-twitter';
   return 'link-outline';
 }

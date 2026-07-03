@@ -26,3 +26,9 @@ npm-debug.log*
 # Cache
 .cache/
 .parcel-cache/
+
+# Generated outputs (regenerate via npm run generate:*)
+generated/
+
+# Sample data (CV, dossier, cover letter)
+samples/
