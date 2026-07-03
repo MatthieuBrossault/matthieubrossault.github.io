@@ -1,5 +1,12 @@
 const FEATURED_COMPANIES = ['ELA Software', 'Aviv Group', 'Onepoint (Bolloré)'];
 
+const WEBSITE_SKILL_TITLES = {
+  fr: ['Savoir-être', 'Secteurs'],
+  en: ['Soft skills', 'Sectors'],
+};
+
+const MAX_SECTOR_ITEMS = 4;
+
 function firstSentence(text) {
   const m = String(text).match(/^[^.]+\./);
   return m ? m[0] : text;
@@ -32,4 +39,21 @@ export function shapeWebsiteExperience(items, legacyLine, locale) {
   }
 
   return featured;
+}
+
+export function shapeWebsiteSkillCategories(categories, locale) {
+  const loc = locale === 'en' ? 'en' : 'fr';
+  const titles = WEBSITE_SKILL_TITLES[loc];
+  const byTitle = new Map((categories ?? []).map((c) => [c.title, c]));
+
+  return titles
+    .map((title) => byTitle.get(title))
+    .filter(Boolean)
+    .map((cat) => ({
+      title: cat.title,
+      items:
+        cat.title === titles[1]
+          ? (cat.items ?? []).slice(0, MAX_SECTOR_ITEMS)
+          : (cat.items ?? []),
+    }));
 }

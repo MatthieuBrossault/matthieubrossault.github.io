@@ -2,7 +2,7 @@ import enTranslations from '../translations/en.json';
 import frTranslations from '../translations/fr.json';
 import enProfile from '../data/profile.en.json';
 import frProfile from '../data/profile.fr.json';
-import { shapeWebsiteExperience } from './website-resume.js';
+import { shapeWebsiteExperience, shapeWebsiteSkillCategories } from './website-resume.js';
 
 export function mergeSiteData(translations, profile, locale) {
   const { firstName, lastName, email, location, linkedin, github, personalSite } = profile.identity;
@@ -42,7 +42,7 @@ export function mergeSiteData(translations, profile, locale) {
       ...translations.resume,
       ...profile.resume,
     },
-    skillCategories: [],
+    skillCategories: shapeWebsiteSkillCategories(profile.skillCategories, locale),
   };
 }
 

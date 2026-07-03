@@ -128,16 +128,16 @@
   gap: 0.35rem;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  background: var(--bg-gradient-yellow-1);
+  background: var(--orange-yellow-crayola);
   color: var(--smoky-black);
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
   text-decoration: none;
-  transition: opacity var(--transition-1);
+  transition: background var(--transition-1);
 }
 
 .resume-cv-download:hover {
-  opacity: 0.9;
+  background: var(--vegas-gold);
 }
 
 .timeline-item--legacy .timeline-item-title {
