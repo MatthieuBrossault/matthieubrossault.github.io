@@ -17,8 +17,7 @@
   "about": {
     "label": "Qui je suis",
     "heading": "À propos",
-    "bio": "Tech Lead .NET, parcours fullstack et responsable technique. Spécialisé en architecture logicielle, microservices et produits SaaS B2B — écosystème .NET, React et cloud. Actuellement sur ELA Build (BTP / maîtrise d’œuvre).",
-    "location": "Nantes, France"
+    "bio": "Tech Lead .NET, parcours fullstack et responsable technique. Spécialisé en architecture logicielle, microservices et produits SaaS B2B — écosystème .NET, React et cloud. Actuellement sur ELA Build (BTP / maîtrise d’œuvre)."
   },
   "services": {
     "title": "Ce que je fais",
@@ -51,26 +50,6 @@
     "experienceTitle": "Expérience",
     "skillsTitle": "Compétences"
   },
-  "education": {
-    "items": []
-  },
-  "skills": {
-    "label": "Ce que j'utilise",
-    "heading": "Compétences & tech",
-    "items": [".NET", "C#", "Angular", "React", "TypeScript", "JavaScript", "HTML/CSS", "SQL"]
-  },
-  "experience": {
-    "label": "Où j'ai travaillé",
-    "heading": "Expérience",
-    "items": [
-      {
-        "role": "Ingénieur Fullstack .NET",
-        "company": "—",
-        "period": "",
-        "summary": "Développement web, projets fullstack."
-      }
-    ]
-  },
   "projects": {
     "label": "Ce que j'ai construit",
     "heading": "Portfolio",
@@ -79,35 +58,51 @@
         "id": "angular-task-tracker",
         "title": "Angular Task Tracker",
         "description": "Application de gestion de tâches avec Angular.",
-        "stack": ["Angular", "TypeScript"],
+        "stack": [
+          "Angular",
+          "TypeScript"
+        ],
         "repoUrl": "https://github.com/MatthieuBrossault/AngularTaskTracker"
       },
       {
         "id": "angular-tic-tac-toe",
         "title": "Angular Tic-Tac-Toe",
         "description": "Jeu morpion en Angular.",
-        "stack": ["Angular", "TypeScript"],
+        "stack": [
+          "Angular",
+          "TypeScript"
+        ],
         "repoUrl": "https://github.com/MatthieuBrossault/AngularTicTacToe"
       },
       {
         "id": "hands-on-react-labs",
         "title": "Hands-On React Labs",
         "description": "HandOnReact Lab — tutoriel React + TypeScript.",
-        "stack": ["React", "TypeScript"],
+        "stack": [
+          "React",
+          "TypeScript"
+        ],
         "repoUrl": "https://github.com/MatthieuBrossault/HandsOnReactLabsTuto"
       },
       {
         "id": "netcore-angular-exemple",
         "title": ".NET Core + Angular (exemple)",
         "description": "Exemple fullstack : backend .NET Core et frontend Angular.",
-        "stack": [".NET Core", "Angular", "TypeScript"],
+        "stack": [
+          ".NET Core",
+          "Angular",
+          "TypeScript"
+        ],
         "repoUrl": "https://github.com/MatthieuBrossault/NetCoreAngularExemple"
       },
       {
         "id": "traversy-react-18",
         "title": "React 18 crash course",
         "description": "Traversy Media — cours React 18 JavaScript.",
-        "stack": ["React", "JavaScript"],
+        "stack": [
+          "React",
+          "JavaScript"
+        ],
         "repoUrl": "https://github.com/MatthieuBrossault/TraversyReact18CrashCourse"
       }
     ]
@@ -116,10 +111,15 @@
     "label": "Me contacter",
     "heading": "Contact",
     "intro": "Contactez-moi sur LinkedIn ou GitHub — avec plaisir pour échanger.",
-    "email": "matthieu.brossault@gmail.com",
     "links": [
-      { "label": "LinkedIn", "url": "https://fr.linkedin.com/in/matthieu-brossault" },
-      { "label": "GitHub", "url": "https://github.com/MatthieuBrossault" }
+      {
+        "label": "LinkedIn",
+        "url": "https://fr.linkedin.com/in/matthieu-brossault"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/MatthieuBrossault"
+      }
     ]
   },
   "nav": {

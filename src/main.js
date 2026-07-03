@@ -1,6 +1,6 @@
 import './styles/vcard.css';
 import './styles/main.css';
-import { enData, frData } from './js/locale-data.js';
+import { localeData } from './js/locale-data.js';
 import { getLocale, loadData, setLocaleStorage, applyCopy } from './js/i18n.js';
 import {
   renderAboutText,
@@ -26,7 +26,7 @@ async function run() {
     data = await loadData(currentLocale);
   } catch (e) {
     console.error(e);
-    data = currentLocale === 'fr' ? frData : enData;
+    data = localeData[currentLocale] ?? localeData.en;
   }
   setLocaleStorage(currentLocale);
   applyCopy(data);

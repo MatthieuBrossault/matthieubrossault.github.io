@@ -32,10 +32,10 @@ Scripts : `npm run dev` | `build` | `preview` ([README.md](../README.md)).
 
 | Élément | Détail |
 |---------|--------|
-| Format | JSON dans [`src/data/`](../src/data/) |
+| Format | JSON : [`src/translations/`](../src/translations/) (UI) + [`src/data/profile.*.json`](../src/data/) (profil) |
 | Locales | **EN** + **FR** |
 | Détection | `navigator.language` + `localStorage` (`locale`) |
-| Fusion CV | `en.json`/`fr.json` + `profile-detail.*.json` via [`locale-data.js`](../src/js/locale-data.js) |
+| Fusion site | [`locale-data.js`](../src/js/locale-data.js) — `mergeSiteData(translations, profile)` |
 
 ---
 
@@ -59,6 +59,20 @@ GitHub Pages (site utilisateur), build GitHub Actions — voir [deployment.md](d
 - Site **100 % statique** (pas de backend)
 - Un mainteneur — effort minimal
 - Règle Cursor : JS/CSS projet ≤ ~300 lignes par fichier ([`.cursor/rules/js-css-line-limits.mdc`](../.cursor/rules/js-css-line-limits.mdc))
+
+---
+
+## Générateurs PDF (hors site)
+
+Scripts Node dans [`scripts/generators/`](../scripts/generators/) — **PDFKit** + polices DejaVu (UTF-8 FR/EN).
+
+| Commande | Sortie |
+|----------|--------|
+| `npm run generate:cv` | `generated/cv/` |
+| `npm run generate:dossier` | `generated/dossier/` |
+| `npm run generate:cover-letter` | `generated/cover-letter/` |
+
+Config cible poste : [`scripts/generators/generator-config.json`](../scripts/generators/generator-config.json). Données profil : `src/data/profile.{fr,en}.json`.
 
 ---
 

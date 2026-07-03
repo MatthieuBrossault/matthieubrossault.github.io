@@ -1,29 +1,49 @@
-import enData from '../data/en.json';
-import frData from '../data/fr.json';
-import enDetail from '../data/profile-detail.en.json';
-import frDetail from '../data/profile-detail.fr.json';
+import enTranslations from '../translations/en.json';
+import frTranslations from '../translations/fr.json';
+import enProfile from '../data/profile.en.json';
+import frProfile from '../data/profile.fr.json';
 
-export function mergeProfile(base, detail) {
+export function mergeSiteData(translations, profile, locale) {
+  const { firstName, lastName, email, location, linkedin, github, personalSite } = profile.identity;
+  const siteLabel = locale === 'fr' ? 'Site perso' : 'Portfolio';
+
   return {
-    ...base,
-    education: detail.education ?? base.education,
-    experience: detail.experience ?? base.experience,
+    ...translations,
+    hero: {
+      ...translations.hero,
+      title: `${firstName} ${lastName}`,
+    },
+    about: {
+      ...translations.about,
+      location,
+    },
+    contact: {
+      ...translations.contact,
+      email,
+      links: [
+        { label: 'LinkedIn', url: linkedin },
+        { label: 'GitHub', url: github },
+        { label: siteLabel, url: personalSite },
+      ],
+    },
+    education: profile.education,
+    experience: {
+      items: profile.experience.items.map(({ dossier: _d, ...exp }) => exp),
+    },
     skills: {
-      ...base.skills,
-      ...(detail.skills || {}),
-      items: detail.skills?.items?.length ? detail.skills.items : base.skills?.items ?? [],
+      items: profile.skills?.items ?? [],
     },
     resume: {
-      ...base.resume,
-      ...(detail.resume || {}),
+      ...translations.resume,
+      ...profile.resume,
     },
-    skillCategories: detail.skillCategories ?? [],
+    skillCategories: profile.skillCategories ?? [],
   };
 }
 
 export const localeData = {
-  en: mergeProfile(enData, enDetail),
-  fr: mergeProfile(frData, frDetail),
+  en: mergeSiteData(enTranslations, enProfile, 'en'),
+  fr: mergeSiteData(frTranslations, frProfile, 'fr'),
 };
 
-export { enData, frData };
+export { enTranslations, frTranslations, enProfile, frProfile };

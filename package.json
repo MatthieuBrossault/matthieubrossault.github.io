@@ -6,9 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:cv": "node scripts/generators/cli.js cv",
+    "generate:dossier": "node scripts/generators/cli.js dossier",
+    "generate:cover-letter": "node scripts/generators/cli.js cover-letter",
+    "generate:all": "node scripts/generators/cli.js all"
   },
   "devDependencies": {
+    "dejavu-fonts-ttf": "^2.37.3",
+    "pdfkit": "^0.19.1",
     "vite": "^5.4.0"
   }
 }

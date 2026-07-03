@@ -1,6 +1,6 @@
 ---
 description: Keep docs/ in sync when changing site stack, architecture, layout, or deployment.
-globs: "{src/main.js,src/js/**,src/styles/**,index.html,vite.config.js,package.json,.github/workflows/**,docs/**}"
+globs: "{src/main.js,src/js/**,src/styles/**,src/translations/**,index.html,vite.config.js,package.json,.github/workflows/**,docs/**}"
 alwaysApply: false
 ---
 
@@ -21,7 +21,8 @@ After any **delivered** change to stack, architecture, layout, or deployment, up
 
 ## Out of scope for `docs/`
 
-- **CV / pitch only** (`src/data/**`) → no `docs/` update unless rendering or i18n behavior changes.
+- **CV / pitch site** (`src/translations/**`) → no `docs/` update unless rendering or i18n behavior changes.
+- **Profil professionnel** (`src/data/profile.*.json`) → no `docs/` unless site rendering of resume changes.
 - **Career recommendations** → `.cursor/infos/` or `.cursor/plans/`, not `docs/`.
 
 ## Checklist before finishing
