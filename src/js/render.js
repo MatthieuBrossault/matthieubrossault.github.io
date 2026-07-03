@@ -62,7 +62,9 @@ export function renderExperienceTimeline(d) {
       const titleParts = [role, company].filter(Boolean);
       let titleHtml = titleParts.join(' — ');
       if (loc) titleHtml += ` · ${loc}`;
-      const period = e.period?.trim() ? escapeHtml(e.period) : '—';
+      const period = e.period?.trim() ? escapeHtml(e.period) : '';
+      const periodHtml = period ? `<span>${period}</span>` : '';
+      const legacyClass = e.legacy ? ' timeline-item--legacy' : '';
       const highlights = Array.isArray(e.highlights)
         ? e.highlights
             .filter(Boolean)
@@ -70,11 +72,11 @@ export function renderExperienceTimeline(d) {
             .join('')
         : '';
       const highlightsBlock = highlights ? `<ul class="timeline-highlights">${highlights}</ul>` : '';
-      const stack = e.stack ? `<p class="timeline-stack">${escapeHtml(e.stack)}</p>` : '';
+      const stack = !e.legacy && e.stack ? `<p class="timeline-stack">${escapeHtml(e.stack)}</p>` : '';
       return `
-    <li class="timeline-item">
+    <li class="timeline-item${legacyClass}">
       <h4 class="h4 timeline-item-title">${titleHtml}</h4>
-      <span>${period}</span>
+      ${periodHtml}
       <p class="timeline-text">${escapeHtml(e.summary ?? '')}</p>
       ${highlightsBlock}
       ${stack}
@@ -199,6 +201,20 @@ export function renderSidebar(d) {
     </li>`
     )
     .join('');
+}
+
+export function renderCvDownload(locale, manifest) {
+  const link = document.getElementById('resume-cv-download');
+  if (!link) return;
+  const entry = manifest?.[locale];
+  if (!entry?.href) {
+    link.hidden = true;
+    return;
+  }
+  link.hidden = false;
+  link.href = entry.href;
+  if (entry.download) link.setAttribute('download', entry.download);
+  else link.removeAttribute('download');
 }
 
 export function renderLangSwitcher(currentLocale, onSelectLocale) {

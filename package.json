@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run sync:cv && vite build",
     "preview": "vite preview",
     "generate:cv": "node scripts/generators/cli.js cv",
+    "generate:cv:all": "node scripts/generators/cli.js cv --locale fr && node scripts/generators/cli.js cv --locale en",
+    "sync:cv": "node scripts/sync-cv-to-public.js",
     "generate:dossier": "node scripts/generators/cli.js dossier",
     "generate:cover-letter": "node scripts/generators/cli.js cover-letter",
     "generate:all": "node scripts/generators/cli.js all"

@@ -48,7 +48,8 @@
     "articleTitle": "Resume",
     "educationTitle": "Education",
     "experienceTitle": "Experience",
-    "skillsTitle": "My skills"
+    "skillsTitle": "My skills",
+    "downloadCv": "Download resume (PDF)"
   },
   "projects": {
     "label": "What I've built",

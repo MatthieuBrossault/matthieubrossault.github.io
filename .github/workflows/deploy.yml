@@ -32,6 +32,8 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
+      - name: Generate CVs
+        run: npm run generate:cv:all
       - name: Build
         run: npm run build
       - name: Setup Pages
