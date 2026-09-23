@@ -8,8 +8,8 @@
     "en": ".NET Tech Lead | Solution Architect (B2B SaaS, microservices)"
   },
   "professionalSummary": {
-    "fr": "Tech Lead .NET avec plus de 10 ans d'expérience, basé à Nantes (full remote France). Spécialisé en architecture logicielle, microservices et SaaS B2B multi-tenant (.NET 8, React, PostgreSQL, Kubernetes). Encadrement technique, design reviews et delivery agile. Trajectoire vers des rôles d'architecte solution sur produits à fort enjeu technique.",
-    "en": ".NET Tech Lead with 10+ years of experience, based in Nantes (full remote in France). Specialized in software architecture, microservices, and multi-tenant B2B SaaS (.NET 8, React, PostgreSQL, Kubernetes). Technical leadership, design reviews, and agile delivery. Progression toward solution architect roles on high-stakes products."
+    "fr": "Tech Lead .NET avec plus de 10 ans d'expérience, basé à Nantes (full remote France). Spécialisé en architecture logicielle, microservices et SaaS B2B multi-tenant (.NET 8, React, PostgreSQL, Kubernetes). Encadrement technique, design reviews et delivery agile, avec un workflow de développement assisté par IA (Claude) de l’analyse à la CI/CD. Trajectoire vers des rôles d'architecte solution sur produits à fort enjeu technique.",
+    "en": ".NET Tech Lead with 10+ years of experience, based in Nantes (full remote in France). Specialized in software architecture, microservices, and multi-tenant B2B SaaS (.NET 8, React, PostgreSQL, Kubernetes). Technical leadership, design reviews, and agile delivery, with an AI-assisted development workflow (Claude) from analysis to CI/CD. Progression toward solution architect roles on high-stakes products."
   },
   "cvSummary": {
     "fr": "Tech Lead .NET, 10 ans d'XP. Architecture microservices & SaaS multi-tenant (.NET 8, React, PostgreSQL, Kubernetes). Design reviews, encadrement agile, cloud Azure/AWS. Full remote France.",
@@ -41,6 +41,9 @@
       "API REST",
       "Azure",
       "AWS",
+      "IA générative",
+      "développement assisté par IA",
+      "Claude",
       "agile",
       "Scrum",
       "télétravail",
@@ -69,6 +72,9 @@
       "REST API",
       "Azure",
       "AWS",
+      "Generative AI",
+      "AI-assisted development",
+      "Claude",
       "agile",
       "Scrum",
       "remote",

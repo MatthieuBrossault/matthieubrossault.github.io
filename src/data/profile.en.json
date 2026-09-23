@@ -55,7 +55,8 @@
             "Scoping AlphaPlan and AlphaFinancial modules",
             "Architecture design and reviews (CQRS, multi-tenant, real-time)",
             "Technical coaching and prioritization with product",
-            "AI/search roadmap (FTS, pgvector) and document imports"
+            "AI/search roadmap (FTS, pgvector) and document imports",
+            "AI-assisted dev workflow (Claude): analysis, specs, coding, MR review, CI/CD automation"
           ]
         }
       },
@@ -295,7 +296,8 @@
       "Kubernetes / Docker",
       "Azure / AWS",
       "Git",
-      "Agile / Scrum"
+      "Agile / Scrum",
+      "AI-assisted development"
     ]
   },
   "skillCategories": [
@@ -406,6 +408,17 @@
         "REST (JSON)",
         "OIDC",
         "SOAP (XML)"
+      ]
+    },
+    {
+      "title": "AI & tooling",
+      "items": [
+        "AI-assisted development (Claude) across the whole lifecycle",
+        "Feature, bug and ticket analysis; POCs",
+        "Specs and mockups",
+        "AI-assisted merge request review",
+        "Automation scripts and CI/CD",
+        "Indexed search: FTS, pgvector (product roadmap)"
       ]
     }
   ],
@@ -520,6 +533,10 @@
       {
         "title": "Protocols",
         "items": "REST (JSON), gRPC, SOAP (XML), OIDC, Postman, SoapUI"
+      },
+      {
+        "title": "AI",
+        "items": "Claude (analysis, specs, mockups, coding, MR review, scripts and CI/CD), PostgreSQL FTS, pgvector"
       },
       {
         "title": "Other",

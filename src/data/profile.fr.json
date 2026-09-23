@@ -55,7 +55,8 @@
             "Cadrage des modules AlphaPlan et AlphaFinancial",
             "Conception et revue d'architecture (CQRS, multi-tenant, temps réel)",
             "Encadrement technique et priorisation avec le produit",
-            "Trajectoire recherche / IA (FTS, pgvector) et imports documentaires"
+            "Trajectoire recherche / IA (FTS, pgvector) et imports documentaires",
+            "Workflow de dev assisté par IA (Claude) : analyse, specs, dev, revue de MR, automatisation CI/CD"
           ]
         }
       },
@@ -294,7 +295,8 @@
       "Kubernetes / Docker",
       "Azure / AWS",
       "Git",
-      "Agile / Scrum"
+      "Agile / Scrum",
+      "Développement assisté par IA"
     ]
   },
   "skillCategories": [
@@ -405,6 +407,17 @@
         "REST (JSON)",
         "OIDC",
         "SOAP (XML)"
+      ]
+    },
+    {
+      "title": "IA & outillage",
+      "items": [
+        "Développement assisté par IA (Claude) sur tout le cycle",
+        "Analyse de features, bugs et tickets ; POC",
+        "Rédaction de specs et maquettes",
+        "Revue de merge requests assistée par IA",
+        "Scripts d’automatisation et CI/CD",
+        "Recherche indexée : FTS, pgvector (trajectoire produit)"
       ]
     }
   ],
@@ -519,6 +532,10 @@
       {
         "title": "Protocoles",
         "items": "REST (JSON), gRPC, SOAP (XML), OIDC, Postman, SoapUI"
+      },
+      {
+        "title": "IA",
+        "items": "Claude (analyse, specs, maquettes, dev, revue de MR, scripts et CI/CD), PostgreSQL FTS, pgvector"
       },
       {
         "title": "Autres",
