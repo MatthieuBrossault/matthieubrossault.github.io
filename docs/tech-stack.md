@@ -43,7 +43,8 @@ Scripts : `npm run dev` | `build` | `preview` ([README.md](../README.md)).
 
 | Chemin | Rôle |
 |--------|------|
-| [`public/vcard/`](../public/vcard/) | Favicon, avatar, icônes services (copiés tels quels dans `dist/`) |
+| [`public/favicon.svg`](../public/favicon.svg) | Favicon principal (SVG, logo « architecture ») ; secours `favicon-32.png` et `apple-touch-icon.png` (180 px) |
+| [`public/vcard/`](../public/vcard/) | Avatar, icônes services (copiés tels quels dans `dist/`) |
 | [`src/images/`](../src/images/) | Images portfolio (import Vite → hash en prod, WebP) |
 
 ---
