@@ -2,23 +2,15 @@
 
 ## Qui je suis
 
-Ingénieur informatique **français**. Carrière professionnelle depuis **juin 2014**, basée à **Nantes**.
+Ingénieur informatique **français**, carrière professionnelle depuis **juin 2014**, basé à **Nantes**. Parcours **Microsoft .NET** : développeur web → développeur expérimenté → **lead backend** → **team lead / responsable technique**, avec une trajectoire vers **architecte solution**.
 
-**Parcours technique :** départ sur l’écosystème **Microsoft .NET** (développeur web), puis évolution vers des rôles à responsabilité croissante :
-
-développeur expérimenté → **lead backend** → **team lead / responsable technique**.
-
-**Objectif actuel :** poursuivre cette progression vers un poste d’**architecte solution**.
-
-**Recherche d’emploi :** marché **français**, **full remote** de préférence ; **Nantes** acceptable en présentiel. Ouvert à **tous secteurs métier** — l’appétence porte surtout sur la **dimension technique**.
-
-**Objectif secondaire du repo :** maintenir les connaissances à jour et alignées avec le marché (veille pertinente, formation ponctuelle quand nécessaire).
+**Contexte privé :** si le dossier `private/` existe (dépôt privé cloné localement, ignoré par git), lire d’abord [private/AGENTS.private.md](private/AGENTS.private.md). Il contient la situation personnelle, les notes carrière et les plans du site. **Ne jamais copier son contenu dans ce dépôt public.**
 
 ---
 
 ## Rôle de ce dépôt
 
-Site **portfolio professionnel** (CV vivant) : mettre en avant compétences, expérience et projets pour la recherche d’emploi.
+Site **portfolio professionnel** (CV vivant) : mettre en avant compétences, expérience et projets.
 
 - **Stack :** Vite, JavaScript vanilla, CSS (thème vCard + surcouche `main.css`), contenu i18n **EN / FR**.
 - **Hébergement :** [GitHub Pages](https://matthieubrossault.github.io) — déploiement **GitHub Actions** sur **`master`** — voir [docs/deployment.md](docs/deployment.md).
@@ -41,7 +33,7 @@ Index documentation : [docs/INDEX.md](docs/INDEX.md).
 
 Fusion site : [`src/js/locale-data.js`](src/js/locale-data.js) combine `src/translations/` + `src/data/profile.*`.
 
-Fichiers de référence (non servis par le site) : CV PDF et dossier DOCX dans `src/data/` — utiles pour enrichir le profil, pas à citer tels quels côté web.
+Fichiers de référence (CV PDF, dossier DOCX) : dans `private/sources/` (dépôt privé), jamais dans ce dépôt.
 
 ### Textes du site — `src/translations/`
 
@@ -80,8 +72,8 @@ Fichiers de référence (non servis par le site) : CV PDF et dossier DOCX dans `
 3. **Périmètre :** changements minimaux ; pas de sur-ingénierie ; respecter les conventions du repo.
 4. **SEO / découvrabilité :** meta dans `src/translations/`, JSON-LD dans `index.html` — garder alignés avec le profil.
 5. **Docs site (`docs/`) :** décrit le site **à l’instant T** — voir [docs/INDEX.md](docs/INDEX.md). Obligation de synchro : [.cursor/rules/docs-sync.mdc](.cursor/rules/docs-sync.mdc).
-6. **Infos carrière (`.cursor/infos/`) :** veille, formation, certifications, projets perso — hors périmètre du site live.
-7. **Plans site (`.cursor/plans/`) :** recommandations et évolutions **futures** du portfolio (contenu, SEO, UI).
+6. **Infos carrière et plans du site :** dans le dépôt privé (`private/infos/`, `private/plans/`) — hors périmètre du dépôt public.
+7. **Données personnelles :** date de naissance, rémunération, situation chez l’employeur, stratégie de carrière → uniquement dans `private/`.
 
 ---
 
@@ -90,14 +82,5 @@ Fichiers de référence (non servis par le site) : CV PDF et dossier DOCX dans `
 | Zone | Rôle | Index |
 |------|------|-------|
 | **`docs/`** | Site actuel (tech, archi, UI, déploiement) — **maintenir à jour** | [docs/INDEX.md](docs/INDEX.md) |
-| **`.cursor/infos/`** | Carrière (veille, formation, certifs, projets GitHub) | [.cursor/infos/INDEX.md](.cursor/infos/INDEX.md) |
-| **`.cursor/plans/`** | Évolutions site à planifier / implémenter | [.cursor/plans/INDEX.md](.cursor/plans/INDEX.md) |
-
-| Sujet | Fichier |
-|-------|---------|
-| Veille marché & tech | [.cursor/infos/market-watch.md](.cursor/infos/market-watch.md) |
-| Diplômes & certifications (FR) | [.cursor/infos/market-credentials.md](.cursor/infos/market-credentials.md) |
-| Formation & études | [.cursor/infos/training.md](.cursor/infos/training.md) |
-| Projets portfolio | [.cursor/infos/portfolio-projects.md](.cursor/infos/portfolio-projects.md) |
-| Contenu du site (à faire) | [.cursor/plans/site-content.md](.cursor/plans/site-content.md) |
-| SEO, ATS & marché (à faire) | [.cursor/plans/market-seo.md](.cursor/plans/market-seo.md) |
+| **`private/infos/`** | Carrière (veille, formation, certifs, projets, analyse marché) — dépôt privé | [private/infos/INDEX.md](private/infos/INDEX.md) |
+| **`private/plans/`** | Évolutions site à planifier / implémenter — dépôt privé | [private/plans/INDEX.md](private/plans/INDEX.md) |

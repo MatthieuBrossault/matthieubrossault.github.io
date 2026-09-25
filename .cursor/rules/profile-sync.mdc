@@ -40,7 +40,7 @@ Downstream: site resume ([`locale-data.js`](../../src/js/locale-data.js)), PDF g
 1. **Never invent** employers, dates, stacks, or achievements — use only what the user or attached material states.
 2. **Always update FR + EN** when the field exists in both files.
 3. **Remove or fix stale entries** (old dates, ended roles) when the user indicates a change.
-4. **Do not** put long career narrative only in `.cursor/infos/` or chat — persist facts in `profile.*.json`.
+4. **Do not** put long career narrative only in `private/infos/` or chat — persist facts in `profile.*.json`.
 5. Reference files in `src/data/` (e.g. sample DOCX/PDF) are **inputs to extract into profile**, not served by the site.
 
 ## Checklist before finishing

@@ -44,5 +44,4 @@ Options: `--locale en`, `--anonymize` (CV/dossier). Profile: `src/data/profile.*
 | Zone | Purpose |
 |------|---------|
 | [docs/INDEX.md](docs/INDEX.md) | Current site (stack, architecture, UI, deployment) |
-| [.cursor/infos/INDEX.md](.cursor/infos/INDEX.md) | Career context (watch, training, certs) |
-| [.cursor/plans/INDEX.md](.cursor/plans/INDEX.md) | Planned site improvements |
+| `private/` (private repo, git-ignored) | Career notes and planned site improvements — not published |

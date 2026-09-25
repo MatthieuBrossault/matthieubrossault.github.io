@@ -20,8 +20,7 @@ Documentation **à jour avec le code** : stack, architecture, UI, déploiement.
 |-------------|------|
 | [README.md](../README.md) | Démarrage rapide (dev, contenu) |
 | [AGENTS.md](../AGENTS.md) | Contexte agents + règle de maintenance `docs/` |
-| [.cursor/infos/](../.cursor/infos/INDEX.md) | Carrière (veille, formation, certifs) |
-| [.cursor/plans/](../.cursor/plans/INDEX.md) | Recommandations futures sur le site |
+| `private/` | Dépôt **privé** cloné localement et ignoré par git : carrière (`infos/`), évolutions du site (`plans/`), documents sources (`sources/`) |
 
 ---
 
@@ -30,5 +29,5 @@ Documentation **à jour avec le code** : stack, architecture, UI, déploiement.
 | Zone | Convention |
 |------|------------|
 | **`docs/`** | Site à l’instant T — kebab-case (`tech-stack.md`) |
-| **`.cursor/infos/`** | Carrière — `market-*.md`, `training.md`, etc. |
-| **`.cursor/plans/`** | Évolutions site à faire — `site-content.md`, `market-seo.md` |
+| **`private/infos/`** | Carrière — `market-*.md`, `training.md`, etc. (dépôt privé) |
+| **`private/plans/`** | Évolutions site à faire — `site-content.md`, `market-seo.md` (dépôt privé) |

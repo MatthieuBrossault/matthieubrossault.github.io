@@ -34,5 +34,8 @@ generated/
 public/cv/*.pdf
 public/cv/manifest.json
 
-# Sample data (CV, dossier, cover letter)
+
+# Former local samples folder (moved to private/sources/)
 samples/
+# Private career repo (cloned locally, never published)
+private/
