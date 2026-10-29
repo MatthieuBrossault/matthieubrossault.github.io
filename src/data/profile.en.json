@@ -29,13 +29,15 @@
         "company": "ELA Software",
         "location": "Nantes, FR",
         "period": "Oct 2025 – present",
-        "summary": "Technical leadership of ELA Build, a multi-tenant SaaS for construction project managers: project management, specifications (CCTP/DQE), bid analysis, site tracking, and document generation (Word/Excel). .NET 8 microservices and React monorepo, hosted on Kubernetes (OVH, France).",
+        "summary": "Technical leadership of ELA Build, a multi-tenant SaaS for construction project managers: project management, specifications (CCTP/DQE), bid analysis, site tracking, and document generation (Word/Excel). .NET 10 microservices (migrated from .NET 8) and React monorepo, hosted on Kubernetes (OVH, France).",
         "highlights": [
           "Product team (~7): technical guidance, design reviews, scoping new modules AlphaPlan (quantity surveying) and AlphaFinancial (project financials)",
           "Backend: CQRS/MediatR, gRPC, PostgreSQL database-per-tenant, Redis, MassTransit, SignalR; YARP API gateway, OIDC auth (OpenIddict)",
-          "Front: React 18, Vite, TypeScript, TanStack, Ant Design; Multidoc/CCTP Word/Schneider catalogue imports; indexed search and AI roadmap (FTS, pgvector)"
+          "Front: React 18, Vite, TypeScript, TanStack, Ant Design; Multidoc/CCTP Word/Schneider catalogue imports; indexed search and AI roadmap (FTS, pgvector)",
+          "AI: semantic search (pgvector, Mistral embeddings), Semantic Kernel assistants (conversational search, project drafting, building-code compliance check); AI-assisted development rolled out to the team (Claude Code, shared project memory, pre-MR rules and checks, MCP servers)",
+          "Reliability: .NET 10 migration and production release, Sentry + OpenTelemetry observability, multi-pod SignalR (Redis backplane), local .NET Aspire stack, tests on disposable Postgres (Testcontainers)"
         ],
-        "stack": "C#, .NET 8, React, TypeScript, PostgreSQL, Redis, gRPC, Kubernetes, Docker, GitLab CI, SignalR, OpenIddict, MassTransit, MongoDB/MinIO",
+        "stack": "C#, .NET 10, React, TypeScript, PostgreSQL (pgvector), Redis, gRPC, Kubernetes, Docker, GitLab CI, SignalR, OpenIddict, MassTransit, Semantic Kernel, Mistral, Sentry, OpenTelemetry, .NET Aspire",
         "dossier": {
           "teamAndMethod": [
             "Product team (~7): fullstack developers, technical leadership",
@@ -44,7 +46,7 @@
             "Branching: trunk-based / feature branches"
           ],
           "technicalEnvironment": [
-            "Microsoft .NET 8 microservices, React monorepo",
+            "Microsoft .NET 10 microservices, React monorepo",
             "PostgreSQL database-per-tenant, Redis, MassTransit, gRPC, SignalR",
             "YARP gateway, OIDC auth (OpenIddict), Kubernetes (OVH France)",
             "Front: React 18, Vite, TypeScript, TanStack, Ant Design",
@@ -55,8 +57,8 @@
             "Scoping AlphaPlan and AlphaFinancial modules",
             "Architecture design and reviews (CQRS, multi-tenant, real-time)",
             "Technical coaching and prioritization with product",
-            "AI/search roadmap (FTS, pgvector) and document imports",
-            "AI-assisted dev workflow (Claude): analysis, specs, coding, MR review, CI/CD automation"
+            "Indexed search (FTS) and in-product AI (pgvector, Mistral, Semantic Kernel), document imports",
+            "AI-assisted development (Claude Code) rolled out to the team: one-command dev workstation setup, shared project memory, rules derived from incidents, pre-MR checks, MCP (GitLab, Sentry, Postgres)"
           ]
         }
       },
