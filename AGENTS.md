@@ -4,7 +4,7 @@
 
 Ingénieur informatique **français**, carrière professionnelle depuis **juin 2014**, basé à **Nantes**. Parcours **Microsoft .NET** : développeur web → développeur expérimenté → **lead backend** → **team lead / responsable technique**, avec une trajectoire vers **architecte solution**.
 
-**Contexte privé :** si le dossier `private/` existe (dépôt privé cloné localement, ignoré par git), lire d’abord [private/AGENTS.private.md](private/AGENTS.private.md). Il contient la situation personnelle, les notes carrière et les plans du site. **Ne jamais copier son contenu dans ce dépôt public.**
+**Contexte privé :** si le dépôt privé `life-assistant` est cloné à côté de celui-ci, lire d’abord [../life-assistant/carriere/AGENTS.private.md](../life-assistant/carriere/AGENTS.private.md). Il contient la situation personnelle, les notes carrière et les plans du site. **Ne jamais copier son contenu dans ce dépôt public.**
 
 ---
 
@@ -33,7 +33,7 @@ Index documentation : [docs/INDEX.md](docs/INDEX.md).
 
 Fusion site : [`src/js/locale-data.js`](src/js/locale-data.js) combine `src/translations/` + `src/data/profile.*`.
 
-Fichiers de référence (CV PDF, dossier DOCX) : dans `private/sources/` (dépôt privé), jamais dans ce dépôt.
+Fichiers de référence (CV PDF, dossier DOCX) : dans `../private-data/carriere/sources/` (local, hors dépôt), jamais dans ce dépôt.
 
 ### Textes du site — `src/translations/`
 
@@ -72,8 +72,8 @@ Fichiers de référence (CV PDF, dossier DOCX) : dans `private/sources/` (dépô
 3. **Périmètre :** changements minimaux ; pas de sur-ingénierie ; respecter les conventions du repo.
 4. **SEO / découvrabilité :** meta dans `src/translations/`, JSON-LD dans `index.html` — garder alignés avec le profil.
 5. **Docs site (`docs/`) :** décrit le site **à l’instant T** — voir [docs/INDEX.md](docs/INDEX.md). Obligation de synchro : [.cursor/rules/docs-sync.mdc](.cursor/rules/docs-sync.mdc).
-6. **Infos carrière et plans du site :** dans le dépôt privé (`private/infos/`, `private/plans/`) — hors périmètre du dépôt public.
-7. **Données personnelles :** date de naissance, rémunération, situation chez l’employeur, stratégie de carrière → uniquement dans `private/`.
+6. **Infos carrière et plans du site :** dans le dépôt privé (`../life-assistant/carriere/infos/`, `../life-assistant/carriere/plans/`) — hors périmètre du dépôt public.
+7. **Données personnelles :** date de naissance, rémunération, situation chez l’employeur, stratégie de carrière → uniquement dans `../life-assistant/carriere/`.
 
 ---
 
@@ -82,5 +82,5 @@ Fichiers de référence (CV PDF, dossier DOCX) : dans `private/sources/` (dépô
 | Zone | Rôle | Index |
 |------|------|-------|
 | **`docs/`** | Site actuel (tech, archi, UI, déploiement) — **maintenir à jour** | [docs/INDEX.md](docs/INDEX.md) |
-| **`private/infos/`** | Carrière (veille, formation, certifs, projets, analyse marché) — dépôt privé | [private/infos/INDEX.md](private/infos/INDEX.md) |
-| **`private/plans/`** | Évolutions site à planifier / implémenter — dépôt privé | [private/plans/INDEX.md](private/plans/INDEX.md) |
+| **`../life-assistant/carriere/infos/`** | Carrière (veille, formation, certifs, projets, analyse marché) — dépôt privé | [../life-assistant/carriere/infos/INDEX.md](../life-assistant/carriere/infos/INDEX.md) |
+| **`../life-assistant/carriere/plans/`** | Évolutions site à planifier / implémenter — dépôt privé | [../life-assistant/carriere/plans/INDEX.md](../life-assistant/carriere/plans/INDEX.md) |

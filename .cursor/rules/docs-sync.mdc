@@ -6,7 +6,7 @@ alwaysApply: false
 
 # Site documentation sync (`docs/`)
 
-`docs/` describes the **live site at time T** — not career notes (`private/infos/`) or future plans (`private/plans/`).
+`docs/` describes the **live site at time T** — not career notes (`../life-assistant/carriere/infos/`) or future plans (`../life-assistant/carriere/plans/`).
 
 ## When to update
 
@@ -23,7 +23,7 @@ After any **delivered** change to stack, architecture, layout, or deployment, up
 
 - **CV / pitch site** (`src/translations/**`) → no `docs/` update unless rendering or i18n behavior changes.
 - **Profil professionnel** (`src/data/profile.*.json`) → no `docs/` unless site rendering of resume changes.
-- **Career recommendations** → `private/infos/` or `private/plans/`, not `docs/`.
+- **Career recommendations** → `../life-assistant/carriere/infos/` or `../life-assistant/carriere/plans/`, not `docs/`.
 
 ## Checklist before finishing
 

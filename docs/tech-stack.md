@@ -1,6 +1,6 @@
 # Stack technique
 
-État au **T** du dépôt `personal-portfolio-web`.
+État au **T** du dépôt `matthieubrossault.github.io`.
 
 ---
 

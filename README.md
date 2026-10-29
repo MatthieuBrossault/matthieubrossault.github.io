@@ -44,4 +44,4 @@ Options: `--locale en`, `--anonymize` (CV/dossier). Profile: `src/data/profile.*
 | Zone | Purpose |
 |------|---------|
 | [docs/INDEX.md](docs/INDEX.md) | Current site (stack, architecture, UI, deployment) |
-| `private/` (private repo, git-ignored) | Career notes and planned site improvements — not published |
+| `../life-assistant/carriere/` (private repo, cloned next to this one) | Career notes and planned site improvements — not published |

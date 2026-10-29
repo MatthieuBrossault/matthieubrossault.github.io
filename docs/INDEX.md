@@ -20,7 +20,7 @@ Documentation **à jour avec le code** : stack, architecture, UI, déploiement.
 |-------------|------|
 | [README.md](../README.md) | Démarrage rapide (dev, contenu) |
 | [AGENTS.md](../AGENTS.md) | Contexte agents + règle de maintenance `docs/` |
-| `private/` | Dépôt **privé** cloné localement et ignoré par git : carrière (`infos/`), évolutions du site (`plans/`), documents sources (`sources/`) |
+| `../life-assistant/carriere/` | Dossier du dépôt **privé** voisin `life-assistant` : carrière (`infos/`), évolutions du site (`plans/`). Documents sources : `../private-data/carriere/sources/` (local) |
 
 ---
 
@@ -29,5 +29,5 @@ Documentation **à jour avec le code** : stack, architecture, UI, déploiement.
 | Zone | Convention |
 |------|------------|
 | **`docs/`** | Site à l’instant T — kebab-case (`tech-stack.md`) |
-| **`private/infos/`** | Carrière — `market-*.md`, `training.md`, etc. (dépôt privé) |
-| **`private/plans/`** | Évolutions site à faire — `site-content.md`, `market-seo.md` (dépôt privé) |
+| **`../life-assistant/carriere/infos/`** | Carrière — `market-*.md`, `training.md`, etc. (dépôt privé) |
+| **`../life-assistant/carriere/plans/`** | Évolutions site à faire — `site-content.md`, `market-seo.md` (dépôt privé) |

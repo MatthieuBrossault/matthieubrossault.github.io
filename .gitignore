@@ -35,7 +35,5 @@ public/cv/*.pdf
 public/cv/manifest.json
 
 
-# Former local samples folder (moved to private/sources/)
+# Former local samples folder (moved to ../private-data/carriere/sources/)
 samples/
-# Private career repo (cloned locally, never published)
-private/
